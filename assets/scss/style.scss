@@ -1,6 +1,29 @@
-.body{
-    color:red;
-}
-*{
-    padding: 10px;
-}
+/*******************************
+        TABLE OF CONTENT
+********************************
+    + Import Library
+    + Reset CSS
+    + Typography
+    + Common Element
+    + Layout
+        - Header
+    + Page
+        - Home
+/* ================ Import Library ============== */
+@use "library/boostrap";
+
+/* ================ Reset CSS ============== */
+@use "base/reset";
+
+/* ================ Typography ============== */
+@use "base/typography";
+
+/* ================ Common Element ============== */
+@use "base/common";
+
+/* ================ Layout ============== */
+@use "layout/sidebar";
+
+/* ================ Page ============== */
+@use "page/home";
+
