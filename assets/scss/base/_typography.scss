@@ -1,0 +1,36 @@
+@use "../helpers/variable";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: variable.$fontFamily;
+    font-size: 14px;
+    color: variable.$blackColor;
+    font-weight: 400;
+}
+
+a {
+    font-family: variable.$fontFamily;
+    color:variable.$blackColor;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover{
+    color:variable.$primaryColor;
+}
+
+p{
+    margin-bottom:0;
+}
+p+p{
+    margin-top:20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: variable.$fontFamily;
+    font-weight: 700;
+}
