@@ -1,7 +1,8 @@
 {
   "scripts": {
+    "watch-gulp": "cd gulp && gulp",
     "watch-scss": "sass --watch ./assets/scss:assets/css",
-    "start": "run-p watch-scss"
+    "start": "run-p watch-gulp watch-scss"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
