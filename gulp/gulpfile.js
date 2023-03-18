@@ -19,6 +19,7 @@ async function includeHTML(){
     return gulp.src([
       'page/**/*.html',
       '!layout/**/*.html', // ignore
+      '!import/**/*.html'
       // using ignore to render the dest, then use exclamation mark !
       ])
       .pipe(fileinclude({
@@ -44,5 +45,5 @@ async function includeHTML(){
     buildAndReload();
 
     // every html file changed then run this function
-    watch(["./**/*.html","assets/**/*"], series(buildAndReload));
+    watch(["./**/*.html","../assets/**/*.css","../assets/**/main.js"], series(buildAndReload));
   }
