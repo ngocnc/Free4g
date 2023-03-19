@@ -1,9 +1,4 @@
 @use "../helpers/variable";
-
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
-
 .page {
   position: relative;
   &__sidebar {
@@ -11,9 +6,8 @@
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
     background-color: #1e1e2d;
-    transition: width 0.2s ease;
 
     &--logo {
       display: flex;
@@ -212,6 +206,14 @@
                   padding:10px 20px;
                   background:variable.$blueColor;
                   display: block;
+                  text-transform: uppercase;
+                }
+              }
+              .menu__item--title{
+                color:#9899ac;
+                transition: color .3s ease;
+                &:hover{
+                  color:variable.$whiteColor;
                 }
               }
               .menu__column--link{
@@ -242,9 +244,9 @@
         }
       }
     }
-
-    @include media-breakpoint-up(lg) {
-      width: 265px;
+    &.open__sidebar{
+      transform:none;
+      transition: all .3s ease-in-out;
     }
   }
 }

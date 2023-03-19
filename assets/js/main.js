@@ -1,4 +1,20 @@
 $(document).ready(function () {
+
+  // Nav mobile click
+  $(".hamburger-nav").on("click",function(){
+    $(".page__sidebar").addClass("open__sidebar");
+    if($(".page__sidebar").hasClass("open__sidebar")){
+      $("body").append("<div class='drawer-overlay'></div>");
+    }
+    if($('.drawer-overlay').length > 0){
+      $('.drawer-overlay').on("click",function(){
+        $(this).remove();
+        $(".page__sidebar").removeClass("open__sidebar");
+      })
+    }
+  })
+
+
   $(".hide-sidebar").on("click", function () {
     $(".page__sidebar").toggleClass("show__icon--only");
     let condition = $(".page__sidebar").hasClass("show__icon--only");
@@ -6,8 +22,10 @@ $(document).ready(function () {
     // Change logo text
     if (condition) {
       $(".page__sidebar--logo > a").html("4g");
+      $(".page").attr("data-changing", true)
     } else {
       $(".page__sidebar--logo > a").html("Speed4g Network");
+      $(".page").attr("data-changing", false)
     }
 
     // Put menu title into sub menu

@@ -1,0 +1,39 @@
+@use "../helpers/variable";
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 1.3em 2em;
+    .footer-text{
+        span{
+            font-size: 1em;
+            color: variable.$bs-gray-500;
+            font-weight: 500;
+        }
+        a{
+            color: variable.$bs-gray-900;
+            font-size: 1em;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            &:hover{
+                cursor: pointer;
+                color: variable.$bs-active-primary-bland;
+            }
+        }
+    }
+    .footer-menu{
+        margin: 0;
+        li{
+            font-size: 1em;
+            display: inline-block;
+            padding: 0 1em;
+            color: #7E8299;
+            font-weight: 500;
+            &:hover{
+                cursor: pointer;
+                color: variable.$bs-active-primary-bland;
+            }
+        }
+    }
+}
