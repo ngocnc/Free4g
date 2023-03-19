@@ -23,6 +23,8 @@
 
 /* ================ Layout ============== */
 @use "layout/sidebar";
+@use "layout/header";
+@use "layout/footer";
 
 /* ================ Page ============== */
 @use "page/home";

@@ -1,0 +1,62 @@
+@use "../helpers/variable";
+header {
+  height: auto;
+  box-shadow: 0 10px 30px 0 rgba(82, 63, 105, 0.05);
+  z-index: 3;
+  background-color: variable.$whiteColor;
+  .header-top-wrapper {
+    position: relative;
+    border-bottom: 1px solid variable.$bs-gray-200;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background:variable.$whiteColor;
+    .header-top {
+      display: flex;
+      align-items: center;
+      .mobile-nav {
+        .hamburger-nav {
+          margin-right: 0.5rem;
+          height: 55px;
+          line-height: 55px;
+          width: 30px;
+        }
+      }
+      .avatar {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .mobile-logo {
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  padding: 1em 1.8em;
+  &_options {
+    font-size: 0.95em;
+    font-weight: 500;
+    color: variable.$bs-gray-900;
+    &.active {
+      font-size: 1.35rem;
+      color: black;
+      font-weight: 600;
+    }
+  }
+  span {
+    width: 1px;
+    height: 18px;
+    background-color: variable.$bs-gray-300;
+    margin: 0 1em;
+  }
+}
