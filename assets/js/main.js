@@ -12,7 +12,23 @@ $(document).ready(function () {
         $(".page__sidebar").removeClass("open__sidebar");
       })
     }
+    if($(".page__sidebar").hasClass("show__icon--only")){
+      $(".page__sidebar").removeClass("show__icon--only")
+      $(".page").attr("data-changing", false);
+      $(".page__sidebar--logo > a").html("Speed4g Network");
+    }
   })
+
+  $(window).on("resize", function () {
+    let windowsize = $(window).width();
+    if(windowsize > 992){
+      $('.drawer-overlay').remove();
+      if($(".page__sidebar").hasClass("open__sidebar")){
+        $(".page__sidebar").removeClass("open__sidebar");
+        $(".page__sidebar").removeClass("show__icon--only")
+      }
+    }
+  });
 
 
   $(".hide-sidebar").on("click", function () {
