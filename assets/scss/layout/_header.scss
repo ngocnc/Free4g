@@ -5,7 +5,6 @@ header {
   z-index: 3;
   background-color: variable.$whiteColor;
   .header-top-wrapper {
-    position: relative;
     border-bottom: 1px solid variable.$bs-gray-200;
     position: fixed;
     top: 0;
@@ -25,6 +24,8 @@ header {
         }
       }
       .avatar {
+        height:55px;
+        line-height:55px;
         img {
           width: 40px;
           height: 40px;

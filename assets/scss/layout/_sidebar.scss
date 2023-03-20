@@ -152,11 +152,13 @@
       .menu__column--item {
         & > a:not(.price){
           position: relative;
+          display: block;
         }
         &:not(.has-submenu, .badge-inner){
           position: relative;
           .menu__item--title {
             margin-left:0;
+            top:0;
             left: 100%;
             display: inline-block;
             position: absolute;

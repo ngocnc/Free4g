@@ -11411,6 +11411,10 @@ h6 {
   background-color: #e4e6ef;
 }
 
+.text-transform-none {
+  text-transform: none;
+}
+
 .page {
   position: relative;
 }
@@ -11548,12 +11552,14 @@ h6 {
 }
 .page__sidebar.show__icon--only .menu__column--item > a:not(.price) {
   position: relative;
+  display: block;
 }
 .page__sidebar.show__icon--only .menu__column--item:not(.has-submenu, .badge-inner) {
   position: relative;
 }
 .page__sidebar.show__icon--only .menu__column--item:not(.has-submenu, .badge-inner) .menu__item--title {
   margin-left: 0;
+  top: 0;
   left: 100%;
   display: inline-block;
   position: absolute;
@@ -11638,7 +11644,6 @@ header {
   background-color: #fff;
 }
 header .header-top-wrapper {
-  position: relative;
   border-bottom: 1px solid #eff2f5;
   position: fixed;
   top: 0;
@@ -11656,6 +11661,10 @@ header .header-top-wrapper .header-top .mobile-nav .hamburger-nav {
   height: 55px;
   line-height: 55px;
   width: 30px;
+}
+header .header-top-wrapper .header-top .avatar {
+  height: 55px;
+  line-height: 55px;
 }
 header .header-top-wrapper .header-top .avatar img {
   width: 40px;
@@ -11722,6 +11731,28 @@ footer .footer-menu li {
 footer .footer-menu li:hover {
   cursor: pointer;
   color: #009EF7;
+}
+
+.message-homepage .modal-body .box {
+  padding: 10px;
+  background: #eeeeee;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.message-homepage .modal-body .box h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.message-homepage .modal-body .box h2 span {
+  color: #de5052;
+}
+.message-homepage .modal-body p {
+  font-weight: 500;
+}
+.message-homepage .modal-body p:last-of-type {
+  margin-bottom: 10px;
 }
 
 .block {
