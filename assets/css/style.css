@@ -11717,6 +11717,7 @@ header .header-top-wrapper .header-top .mobile-logo img {
   font-size: 0.95em;
   font-weight: 500;
   color: var(--gray--text--color);
+  transition: color 0.3s ease;
 }
 .header-bottom_options.active {
   font-size: 1.35rem;

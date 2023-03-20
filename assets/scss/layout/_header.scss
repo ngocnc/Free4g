@@ -58,6 +58,7 @@ header {
     font-size: 0.95em;
     font-weight: 500;
     color: var(--gray--text--color);
+    transition: color 0.3s ease;
     &.active {
       font-size: 1.35rem;
       color: var(--dark--text--color);
