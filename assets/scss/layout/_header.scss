@@ -5,13 +5,14 @@ header {
   z-index: 3;
   background-color: variable.$whiteColor;
   .header-top-wrapper {
-    border-bottom: 1px solid variable.$bs-gray-200;
+    border-bottom: 1px solid var(--border-header-color);
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     width: 100%;
-    background:variable.$whiteColor;
+    background:var(--white--color);
+    transition: all .3s ease;
     .header-top {
       display: flex;
       align-items: center;
@@ -28,15 +29,16 @@ header {
           font-size: 20px;
           vertical-align:-webkit-baseline-middle;
           transition: all .3s ease;
+          color:var(--dark--text--color);
         }
       }
       .avatar {
-        height:55px;
-        line-height:55px;
         margin-left:20px;
-        img {
-          width: 40px;
-          height: 40px;
+        i{
+          font-size: 20px;
+          vertical-align:-webkit-baseline-middle;
+          transition: all .3s ease;
+          color:var(--dark--text--color);
         }
       }
       .mobile-logo {
@@ -55,10 +57,11 @@ header {
   &_options {
     font-size: 0.95em;
     font-weight: 500;
-    color: variable.$bs-gray-900;
+    color: var(--gray--text--color);
     &.active {
       font-size: 1.35rem;
-      color: black;
+      color: var(--dark--text--color);
+      transition: color .3s ease;
       font-weight: 600;
     }
   }
