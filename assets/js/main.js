@@ -1,5 +1,8 @@
 $(document).ready(function () {
-
+  const myModal = new bootstrap.Modal('#onload');
+  if( window.location.pathname == '/index.html' || window.location.pathname == '/index.php' ){
+    myModal.show();
+  }
   // Nav mobile click
   $(".hamburger-nav").on("click",function(){
     $(".page__sidebar").addClass("open__sidebar");
@@ -109,4 +112,15 @@ $(document).ready(function () {
       });
     }
   );
+  $(window).on("click",function(e){
+
+    let activeSubmenu = $(".menu__column--item.has-submenu.active");
+    let changeSidebar = $(".page-icon.hide-sidebar svg " || ".show__icon--only .page-icon.hide-sidebar svg")
+
+    if(!activeSubmenu.is(e.target) && activeSubmenu.has(e.target).length === 0 && !changeSidebar.is(e.target)){
+      $(activeSubmenu).removeClass("active")
+      .find(".sub__menu")
+      .height(0);
+    }
+  })
 });
