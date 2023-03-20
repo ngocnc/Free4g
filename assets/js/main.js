@@ -1,8 +1,12 @@
 $(document).ready(function () {
   const myModal = new bootstrap.Modal('#onload');
-  if( window.location.pathname == '/index.html' || window.location.pathname == '/index.php' ){
+  let homepages = [ '/', '/index.html', '/index.php', '/Free4g/'];
+  if (homepages.indexOf(window.location.pathname) >= 0) {
     myModal.show();
   }
+  // if( window.location.pathname == '/index.html' || window.location.pathname == '/index.php' ){
+  //   myModal.show();
+  // }
   // Nav mobile click
   $(".hamburger-nav").on("click",function(){
     $(".page__sidebar").addClass("open__sidebar");
@@ -112,6 +116,8 @@ $(document).ready(function () {
       });
     }
   );
+
+  // Click outside to turn off which submenu open
   $(window).on("click",function(e){
 
     let activeSubmenu = $(".menu__column--item.has-submenu.active");
@@ -121,6 +127,16 @@ $(document).ready(function () {
       $(activeSubmenu).removeClass("active")
       .find(".sub__menu")
       .height(0);
+    }
+  })
+
+  // Change darkmode
+  $(".changing-mode").on("click",function(){
+    $("body").toggleClass("dark-mode");
+    if($("body").hasClass("dark-mode")){
+      $(".changing-mode").find("i").attr('class', 'fal fa-moon')
+    }else{
+      $(".changing-mode").find("i").attr('class', 'fal fa-sun')
     }
   })
 });
