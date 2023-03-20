@@ -109,7 +109,7 @@ hr {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -11662,9 +11662,15 @@ header .header-top-wrapper .header-top .mobile-nav .hamburger-nav {
   line-height: 55px;
   width: 30px;
 }
+header .header-top-wrapper .header-top .changing-mode i {
+  font-size: 20px;
+  vertical-align: -webkit-baseline-middle;
+  transition: all 0.3s ease;
+}
 header .header-top-wrapper .header-top .avatar {
   height: 55px;
   line-height: 55px;
+  margin-left: 20px;
 }
 header .header-top-wrapper .header-top .avatar img {
   width: 40px;
