@@ -12,8 +12,14 @@ $container-max-widths: (
   xxl: 1320px,
 );
 $headings-margin-bottom: 0;
-
-
+$card-bg: none;
+$card-cap-bg: transparent;
+$table-border-color:  transparent;
+$pagination-border-color: none;
+$pagination-disabled-bg: none;
+$pagination-hover-bg: none;
+$pagination-bg: none;
+$pagination-focus-box-shadow:none;
 
 
 // 3. Include remainder of required Bootstrap stylesheets
