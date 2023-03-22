@@ -63,6 +63,8 @@ header {
     }
   }
   i{
+    color:var(--dark--text--color);
+    transition: color 0.3s ease;
     margin-right:10px;
   }
   &_options {

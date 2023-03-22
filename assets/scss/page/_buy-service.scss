@@ -32,15 +32,22 @@
     }
     
     .list-service {
-      background-color: #fff;
+      background-color: var(--heading--table);
+      transition: background-color 0.3s ease;
       padding: 4.25rem;
       border-radius: 0.625rem;
       box-shadow: 0 0 20px 0 rgba(76, 87, 125, 0.02);
-      .list-service_detail {
-        background-color: #f8fafb;
+      &_detail {
+        background-color: var(--plan--box-bg);
+        transition: all 0.3s ease;
         text-align: center;
         padding: 3.7em 2.4em 3.5em;
+        &:hover{
+          transform:translateY(-20px);
+        }
         h3 {
+          color:var(--dark--text--color);
+          transition: color 0.3s ease;
           font-size: 1.8em;
         }
         .list-service_detail-price {
@@ -68,6 +75,8 @@
             font-size: 1.1em;
             font-weight: 500;
             padding-right: 1em;
+            color:var(--dark--text--color);
+            transition: color 0.3s ease;
           }
           .list-service_detail-endow_icon {
             padding: 0.2em;
