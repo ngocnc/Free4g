@@ -11232,6 +11232,7 @@ html {
   --heading--table: #fff;
   --hover-data-table:#e6f7ff;
   --heading-bottom--text--color: #a1a5b7;
+  --plan--box-bg: #f8fafb ;
 }
 
 .dark-mode {
@@ -11245,6 +11246,7 @@ html {
   --heading--table: #1b1b28;
   --hover-data-table: #1e1e2d;
   --heading-bottom--text--color:#fff;
+  --plan--box-bg:rgb(36, 37, 37);
 }
 
 html, body {
@@ -11453,6 +11455,10 @@ h6 {
   display: inline-block;
 }
 
+.dark-mode .sub__menu--toggle .menu__item > .menu__content:hover {
+  background: #1a1a27;
+}
+
 .sub__menu--toggle {
   position: absolute;
   inset: 0px 0px auto auto;
@@ -11474,7 +11480,7 @@ h6 {
 .sub__menu--toggle .seperator {
   display: block;
   height: 0;
-  border-bottom: 1px solid #eff2f5;
+  border-bottom: 1px solid var(--border-header-color);
 }
 .sub__menu--toggle .menu__content {
   padding: 0.65rem 1rem;
@@ -11482,6 +11488,7 @@ h6 {
 .sub__menu--toggle .menu__content a {
   display: block;
   width: 100%;
+  color: var(--dark--text--color);
 }
 .sub__menu--toggle .menu__item > .menu__content:hover {
   background: rgba(245, 248, 250, 0.8);
@@ -11986,6 +11993,8 @@ header .header-top-wrapper .header-top .mobile-logo img {
   color: #009ef7;
 }
 .header-bottom i {
+  color: var(--dark--text--color);
+  transition: color 0.3s ease;
   margin-right: 10px;
 }
 .header-bottom_options {
@@ -12259,57 +12268,66 @@ footer .footer-menu li:hover {
   color: #009ef7;
 }
 .page__content--inner .list-service {
-  background-color: #fff;
+  background-color: var(--heading--table);
+  transition: background-color 0.3s ease;
   padding: 4.25rem;
   border-radius: 0.625rem;
   box-shadow: 0 0 20px 0 rgba(76, 87, 125, 0.02);
 }
-.page__content--inner .list-service .list-service_detail {
-  background-color: #f8fafb;
+.page__content--inner .list-service_detail {
+  background-color: var(--plan--box-bg);
+  transition: all 0.3s ease;
   text-align: center;
   padding: 3.7em 2.4em 3.5em;
 }
-.page__content--inner .list-service .list-service_detail h3 {
+.page__content--inner .list-service_detail:hover {
+  transform: translateY(-20px);
+}
+.page__content--inner .list-service_detail h3 {
+  color: var(--dark--text--color);
+  transition: color 0.3s ease;
   font-size: 1.8em;
 }
-.page__content--inner .list-service .list-service_detail .list-service_detail-price {
+.page__content--inner .list-service_detail .list-service_detail-price {
   font-size: 1em;
   color: #a1a5b7;
   padding: 1em 0;
 }
-.page__content--inner .list-service .list-service_detail .list-service_detail-price span:nth-child(1) {
+.page__content--inner .list-service_detail .list-service_detail-price span:nth-child(1) {
   font-size: 3em;
   color: #009ef7;
   font-weight: 600;
 }
-.page__content--inner .list-service .list-service_detail .list-service_detail-price span:nth-child(2) {
+.page__content--inner .list-service_detail .list-service_detail-price span:nth-child(2) {
   color: #009ef7;
 }
-.page__content--inner .list-service .list-service_detail .list-service_detail-endow {
+.page__content--inner .list-service_detail .list-service_detail-endow {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8em 0;
 }
-.page__content--inner .list-service .list-service_detail .list-service_detail-endow p {
+.page__content--inner .list-service_detail .list-service_detail-endow p {
   width: 100%;
   font-size: 1.1em;
   font-weight: 500;
   padding-right: 1em;
+  color: var(--dark--text--color);
+  transition: color 0.3s ease;
 }
-.page__content--inner .list-service .list-service_detail .list-service_detail-endow .list-service_detail-endow_icon {
+.page__content--inner .list-service_detail .list-service_detail-endow .list-service_detail-endow_icon {
   padding: 0.2em;
   background-color: #c5edd8;
   border-radius: 50%;
   display: flex;
   align-items: center;
 }
-.page__content--inner .list-service .list-service_detail .list-service_detail-endow .list-service_detail-endow_icon i {
+.page__content--inner .list-service_detail .list-service_detail-endow .list-service_detail-endow_icon i {
   font-size: 1em;
   font-weight: bold;
   color: #52ce8b;
 }
-.page__content--inner .list-service .list-service_detail .buy-now {
+.page__content--inner .list-service_detail .buy-now {
   margin-top: 2.8em;
   font-size: 1.1em;
   padding: 0.7em;
@@ -12318,7 +12336,7 @@ footer .footer-menu li:hover {
   font-weight: 500;
   transition: all 0.3s ease;
 }
-.page__content--inner .list-service .list-service_detail .buy-now:hover {
+.page__content--inner .list-service_detail .buy-now:hover {
   background-color: #0095e8;
 }
 

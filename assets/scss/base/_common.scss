@@ -189,6 +189,16 @@
   display: inline-block;
 }
 
+.dark-mode{
+  .sub__menu--toggle{
+    .menu__item{
+      & > .menu__content:hover{
+        background:variable.$blackColor;
+      }
+    }
+  }
+}
+
 .sub__menu--toggle {
   position: absolute;
   inset: 0px 0px auto auto;
@@ -210,13 +220,14 @@
   .seperator {
     display: block;
     height: 0;
-    border-bottom: 1px solid #eff2f5;
+    border-bottom: 1px solid var(--border-header-color);
   }
   .menu__content {
     padding: 0.65rem 1rem;
     a {
       display: block;
       width: 100%;
+      color:var(--dark--text--color);
     }
   }
   .menu__item {

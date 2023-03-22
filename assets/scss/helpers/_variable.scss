@@ -37,6 +37,8 @@ html {
   --hover-data-table:#e6f7ff;
 
   --heading-bottom--text--color: #{$bs-gray-500};
+
+  --plan--box-bg: #f8fafb
 }
 
 .dark-mode {
@@ -52,4 +54,6 @@ html {
   --hover-data-table: #1e1e2d;
 
   --heading-bottom--text--color:#{$whiteColor};
+
+  --plan--box-bg:rgb(36, 37, 37);
 }
