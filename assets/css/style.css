@@ -11249,6 +11249,7 @@ html {
 
 html, body {
   font-size: 13px;
+  height: 100%;
 }
 
 body {
@@ -11300,6 +11301,7 @@ h6 {
 }
 .page {
   display: flex;
+  height: 100%;
 }
 [data-changing=false] .page__sidebar {
   width: 265px;
@@ -11340,6 +11342,9 @@ h6 {
   background-color: var(--white--color);
 }
 .page__content--inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
   padding: 30px 0;
   background-color: var(--background--content);
   transition: background-color 0.3s ease;
