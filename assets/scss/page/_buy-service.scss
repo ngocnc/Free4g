@@ -1,0 +1,99 @@
+.page__content--inner{
+    .header-bottom-wrapper {
+      cursor: context-menu;
+      .header-bottom {
+        .header-bottom_options {
+          &:nth-of-type(2) {
+            display: flex;
+            align-items: center;
+            span {
+              width: 0.52em;
+              height: 0.135em;
+              background-color: #a1a5b7;
+              border-radius: 10px;
+              margin: 0 0.5em;
+            }
+            p {
+              margin: 0;
+              color: #a1a5b7;
+              &.active {
+                color: var(--dark--text--color);
+                transition: color 0.3s ease;
+              }
+              &:nth-of-type(1) {
+                &:hover {
+                  color: #009ef7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .list-service {
+      background-color: #fff;
+      padding: 4.25rem;
+      border-radius: 0.625rem;
+      box-shadow: 0 0 20px 0 rgba(76, 87, 125, 0.02);
+      .list-service_detail {
+        background-color: #f8fafb;
+        text-align: center;
+        padding: 3.7em 2.4em 3.5em;
+        h3 {
+          font-size: 1.8em;
+        }
+        .list-service_detail-price {
+          font-size: 1em;
+          color: #a1a5b7;
+          padding: 1em 0;
+          span {
+            &:nth-child(1) {
+              font-size: 3em;
+              color: #009ef7;
+              font-weight: 600;
+            }
+            &:nth-child(2) {
+              color: #009ef7;
+            }
+          }
+        }
+        .list-service_detail-endow {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.8em 0;
+          p {
+            width: 100%;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding-right: 1em;
+          }
+          .list-service_detail-endow_icon {
+            padding: 0.2em;
+            background-color: #c5edd8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            i {
+              font-size: 1em;
+              font-weight: bold;
+              color: #52ce8b;
+            }
+          }
+        }
+        .buy-now {
+          margin-top: 2.8em;
+          font-size: 1.1em;
+          padding: 0.7em;
+          background-color: #009ef7;
+          border: none;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: #0095e8;
+          }
+        }
+      }
+    }
+}
