@@ -35,6 +35,8 @@ html {
   --heading--title: #F8F9FC;
   --heading--table: #{$whiteColor};
   --hover-data-table:#e6f7ff;
+
+  --heading-bottom--text--color: #{$bs-gray-500};
 }
 
 .dark-mode {
@@ -48,4 +50,6 @@ html {
   --heading--title: #1b1b28;
   --heading--table: #1b1b28;
   --hover-data-table: #1e1e2d;
+
+  --heading-bottom--text--color:#{$whiteColor};
 }

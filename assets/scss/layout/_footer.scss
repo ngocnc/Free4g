@@ -5,6 +5,8 @@ footer{
     align-items: center;
     height: auto;
     padding: 1.3em 2em;
+    background: var(--white--color);
+    transition: background .3s ease;
     .footer-text{
         span{
             font-size: 1em;

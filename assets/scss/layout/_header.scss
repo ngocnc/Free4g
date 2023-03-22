@@ -34,6 +34,7 @@ header {
       }
       .avatar {
         margin-left:20px;
+        position: relative;
         i{
           font-size: 20px;
           vertical-align:-webkit-baseline-middle;
@@ -54,6 +55,16 @@ header {
   display: flex;
   align-items: center;
   padding: 1em 1.8em;
+  a{
+    margin-right:10px;
+    color:var(--heading-bottom--text--color);
+    &:hover{
+      color:variable.$blueColor;
+    }
+  }
+  i{
+    margin-right:10px;
+  }
   &_options {
     font-size: 0.95em;
     font-weight: 500;
