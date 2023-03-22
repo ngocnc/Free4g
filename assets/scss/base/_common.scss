@@ -408,6 +408,7 @@
 }
 
 .dataTables_info{
+  color: var(--dark--text--color);
   @include media-breakpoint-down(md) {
     padding:1.5rem 0;
   }

@@ -11660,6 +11660,9 @@ h6 {
   content: "\f068";
 }
 
+.dataTables_info {
+  color: var(--dark--text--color);
+}
 @media (max-width: 767.98px) {
   .dataTables_info {
     padding: 1.5rem 0;
