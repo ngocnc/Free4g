@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  const myModal = new bootstrap.Modal('#onload');
-  let homepages = [ '/', '/index.html', '/index.php', '/Free4g/'];
+  const myModal = new bootstrap.Modal("#onload");
+  let homepages = ["/", "/index.html", "/index.php", "/Free4g/"];
   if (homepages.indexOf(window.location.pathname) >= 0) {
     myModal.show();
   }
@@ -8,35 +8,34 @@ $(document).ready(function () {
   //   myModal.show();
   // }
   // Nav mobile click
-  $(".hamburger-nav").on("click",function(){
+  $(".hamburger-nav").on("click", function () {
     $(".page__sidebar").addClass("open__sidebar");
-    if($(".page__sidebar").hasClass("open__sidebar")){
+    if ($(".page__sidebar").hasClass("open__sidebar")) {
       $("body").append("<div class='drawer-overlay'></div>");
     }
-    if($('.drawer-overlay').length > 0){
-      $('.drawer-overlay').on("click",function(){
+    if ($(".drawer-overlay").length > 0) {
+      $(".drawer-overlay").on("click", function () {
         $(this).remove();
         $(".page__sidebar").removeClass("open__sidebar");
-      })
+      });
     }
-    if($(".page__sidebar").hasClass("show__icon--only")){
-      $(".page__sidebar").removeClass("show__icon--only")
+    if ($(".page__sidebar").hasClass("show__icon--only")) {
+      $(".page__sidebar").removeClass("show__icon--only");
       $(".page").attr("data-changing", false);
       $(".page__sidebar--logo > a").html("Speed4g Network");
     }
-  })
+  });
 
   $(window).on("resize", function () {
     let windowsize = $(window).width();
-    if(windowsize > 992){
-      $('.drawer-overlay').remove();
-      if($(".page__sidebar").hasClass("open__sidebar")){
+    if (windowsize > 992) {
+      $(".drawer-overlay").remove();
+      if ($(".page__sidebar").hasClass("open__sidebar")) {
         $(".page__sidebar").removeClass("open__sidebar");
-        $(".page__sidebar").removeClass("show__icon--only")
+        $(".page__sidebar").removeClass("show__icon--only");
       }
     }
   });
-
 
   $(".hide-sidebar").on("click", function () {
     $(".page__sidebar").toggleClass("show__icon--only");
@@ -45,10 +44,10 @@ $(document).ready(function () {
     // Change logo text
     if (condition) {
       $(".page__sidebar--logo > a").html("4g");
-      $(".page").attr("data-changing", true)
+      $(".page").attr("data-changing", true);
     } else {
       $(".page__sidebar--logo > a").html("Speed4g Network");
-      $(".page").attr("data-changing", false)
+      $(".page").attr("data-changing", false);
     }
 
     // Put menu title into sub menu
@@ -57,9 +56,7 @@ $(document).ready(function () {
       ".menu__column .menu__column--item.has-submenu > .menu__column--link > .menu__item--title"
     ).each(function (index, item) {
       let textHtml = `<li class="menu__column--item heading__submenu">
-        <span>${$(
-            this
-          ).text()}
+        <span>${$(this).text()}
         </span>
       </li>`;
       if (condition) {
@@ -76,8 +73,7 @@ $(document).ready(function () {
         $(eachSubMenu)
           .children()
           .each(function () {
-            eachTotalHeightOfSubMenu += $(eachSubMenu)
-            .children().height();
+            eachTotalHeightOfSubMenu += $(eachSubMenu).children().height();
           });
         $(eachSubMenu).height(eachTotalHeightOfSubMenu);
       }
@@ -118,25 +114,29 @@ $(document).ready(function () {
   );
 
   // Click outside to turn off which submenu open
-  $(window).on("click",function(e){
-
+  $(window).on("click", function (e) {
     let activeSubmenu = $(".menu__column--item.has-submenu.active");
-    let changeSidebar = $(".page-icon.hide-sidebar svg " || ".show__icon--only .page-icon.hide-sidebar svg")
+    let changeSidebar = $(
+      ".page-icon.hide-sidebar svg " ||
+        ".show__icon--only .page-icon.hide-sidebar svg"
+    );
 
-    if(!activeSubmenu.is(e.target) && activeSubmenu.has(e.target).length === 0 && !changeSidebar.is(e.target)){
-      $(activeSubmenu).removeClass("active")
-      .find(".sub__menu")
-      .height(0);
+    if (
+      !activeSubmenu.is(e.target) &&
+      activeSubmenu.has(e.target).length === 0 &&
+      !changeSidebar.is(e.target)
+    ) {
+      $(activeSubmenu).removeClass("active").find(".sub__menu").height(0);
     }
-  })
+  });
 
   // Change darkmode
-  $(".changing-mode").on("click",function(){
+  $(".changing-mode").on("click", function () {
     $("body").toggleClass("dark-mode");
-    if($("body").hasClass("dark-mode")){
-      $(".changing-mode").find("i").attr('class', 'fal fa-moon')
-    }else{
-      $(".changing-mode").find("i").attr('class', 'fal fa-sun')
+    if ($("body").hasClass("dark-mode")) {
+      $(".changing-mode").find("i").attr("class", "fal fa-moon");
+    } else {
+      $(".changing-mode").find("i").attr("class", "fal fa-sun");
     }
-  })
+  });
 });
