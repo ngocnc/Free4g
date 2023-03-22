@@ -120,7 +120,7 @@ $(document).ready(function () {
   // Click outside to turn off which submenu open
   $(window).on("click",function(e){
 
-    let activeSubmenu = $(".menu__column--item.has-submenu.active");
+    let activeSubmenu = $(".page__sidebar.show__icon--only .menu__column--item.has-submenu.active");
     let changeSidebar = $(".page-icon.hide-sidebar svg " || ".show__icon--only .page-icon.hide-sidebar svg")
 
     let activeToggleMenu = $(".sub__menu--toggle.show");
