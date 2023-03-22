@@ -1,0 +1,188 @@
+@use "../helpers/variable";
+
+.text--paler {
+  margin: 0;
+  color: variable.$bs-gray-500;
+  background-color: transparent;
+  padding-right: 0.5rem;
+}
+.strikethrough {
+  margin: 0;
+  color: variable.$bs-gray-500;
+  background-color: transparent;
+  padding-right: 0.5rem;
+}
+
+.selection {
+  background: var(--white--color);
+  padding: 2rem 2.25rem;
+  border-radius: 0.625rem;
+  transition: background-color 0.3s ease;
+  .selection-body {
+    border-bottom: 1px dashed variable.$bs-gray-300;
+    padding: 16px 0 16px;
+    .accordion-item {
+      border: 0;
+      outline: none;
+      background: var(--white--color);
+      transition: background-color 0.3s ease;
+      .accordion-button {
+        border: none;
+        background: none;
+        box-shadow: none;
+        color: var(--dark--text--color);
+        font-weight: 600;
+        font-size: 16.25px;
+        padding: 0;
+        z-index: 1;
+        .accordion-icon {
+          background: rgba(
+            $color: variable.$bs-active-primary-bland,
+            $alpha: 0.3
+          );
+          width: 20px;
+          height: 20px;
+          margin-right: 1.25rem;
+          border-radius: 0.475rem;
+          &:hover {
+            background: rgba(
+              $color: variable.$bs-active-primary-bland,
+              $alpha: 0.3
+            ) !important;
+            .plus-icon {
+              color: #3699ff;
+            }
+          }
+          .minus-icon {
+            display: block;
+            text-align: center;
+            line-height: 20px;
+            font-size: 16.25px;
+            color: #3699ff;
+          }
+          .plus-icon {
+            display: none;
+            text-align: center;
+            line-height: 20px;
+            font-size: 16.25px;
+            color: variable.$bs-gray-500;
+          }
+        }
+        &.collapsed {
+          .accordion-icon {
+            background: rgba($color: variable.$bs-gray-500, $alpha: 0.3);
+            .minus-icon {
+              display: none;
+            }
+            .plus-icon {
+              display: block;
+            }
+          }
+        }
+        &::after {
+          background-image: none;
+        }
+      }
+      .accordion-body {
+        padding-left: 0;
+        padding-bottom: 0;
+        .slection-content {
+          padding-left: 2.5rem;
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          span {
+            display: inline-block;
+            background-color: var(--dark--text--color);
+            border-radius: 6px;
+            width: 8px;
+            height: 4px;
+            line-height: 20px;
+            margin-right: 0.75rem;
+          }
+          .slection-text {
+            font-size: 1.075rem;
+            color: var(--dark--text--color);
+            font-weight: 500;
+          }
+        }
+        .slection-SNI-live {
+          p {
+            color: var(--dark--text--color);
+            font-size: 1.075rem;
+            .selection-link {
+              color: variable.$bs-active-primary-bland;
+              &:hover {
+                color: #006dab;
+              }
+            }
+          }
+          .slection-p {
+            margin-bottom: 1rem;
+          }
+          .selection-list-item {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            li {
+              list-style-type: disc;
+              color: var(--dark--text--color);
+              font-size: 1.075rem;
+              .selection-link {
+                color: variable.$bs-active-primary-bland;
+                &:hover {
+                  color: #006dab;
+                }
+              }
+            }
+          }
+        }
+        .buy-data {
+          p {
+            font-size: 1.075rem;
+            margin: 0 0 13px;
+            color: var(--dark--text--color);
+            &:last-child {
+              margin-bottom: 1rem;
+            }
+          }
+          li {
+            color: var(--dark--text--color);
+            font-size: 1.075rem;
+          }
+          ul {
+            padding-left: 2rem;
+            li {
+              list-style-type: disc;
+            }
+          }
+          hr {
+            color: var(--dark--text--color);
+          }
+          .selection-link {
+            color: variable.$bs-active-primary-bland;
+            &:hover {
+              color: #006dab;
+            }
+          }
+        }
+        .slection-content-disc {
+          ul {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            li {
+              font-size: 1.075rem;
+              list-style-type: disc;
+              color: var(--dark--text--color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
