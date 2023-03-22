@@ -18,6 +18,7 @@ $bs-gray-200: #eff2f5;
 $bs-gray-300: #e4e6ef;
 $bs-gray-500: #a1a5b7;
 $bs-gray-600: #7e8299;
+$bs-gray-700: #5e6278;
 $bs-gray-900: #181c32;
 $backGround-body-color: #f0f3f8;
 
@@ -32,14 +33,14 @@ html {
   --background--content: #f0f3f8;
   --block--progress--background: #{$bs-gray-100};
 
-  --heading--title: #F8F9FC;
+  --heading--title: #f8f9fc;
   --heading--table: #{$whiteColor};
-  --hover-data-table:#e6f7ff;
+  --hover-data-table: #e6f7ff;
 }
 
 .dark-mode {
   --white--color: #1e1e2d;
-  --dark--text--color:  #{$whiteColor};
+  --dark--text--color: #{$whiteColor};
   --gray--text--color: #{$whiteColor};
   --border-header-color: #{$blackColor};
   --background--content: #1e1e2d;
