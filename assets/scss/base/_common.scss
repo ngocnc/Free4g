@@ -10,6 +10,7 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .container-fluid,
   .container {
     @include make-container();
   }
@@ -106,7 +107,19 @@
         }
       }
       .header-bottom {
+        flex-wrap:wrap;
+        gap:6px;
         padding: 0 1.8em 1em 0;
+        span{
+          background:none;
+          height:auto;
+          width:auto;
+          &::after{
+            content: "-";
+            color:var(--dark--text--color);
+            transition: color 0.3s ease;
+          }
+        }
       }
     }
   }

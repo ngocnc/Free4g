@@ -18,7 +18,7 @@
   padding: 2rem 2.25rem;
   border-radius: 0.625rem;
   transition: background-color 0.3s ease;
-  .selection-body {
+  &-body {
     border-bottom: 1px dashed variable.$bs-gray-300;
     padding: 16px 0 16px;
     .accordion-item {
@@ -97,6 +97,7 @@
           span {
             display: inline-block;
             background-color: var(--dark--text--color);
+            transition: background-color 0.3 ease;
             border-radius: 6px;
             width: 8px;
             height: 4px;
@@ -106,6 +107,7 @@
           .slection-text {
             font-size: 1.075rem;
             color: var(--dark--text--color);
+            transition: color 0.3s ease;
             font-weight: 500;
           }
         }
