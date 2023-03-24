@@ -447,11 +447,11 @@
     max-width: 100%;
     width: 100%;
     padding: 0 10px;
-    background: #fff;
+    background: var(--input--background);
     color: #666;
     font-size: 14px;
-    border: 1px solid #e5e5e5;
-    transition: 0.2s ease-in-out;
+    border: 1px solid var(--input--background);
+    transition: 0.3s ease;
     transition-property: color, background-color, border;
   }
   
@@ -479,10 +479,10 @@
   input[type="tel"]:focus,
   input[type="color"]:focus {
     outline: 0;
-    background-color: #fff;
+    background-color: var(--input--background);
     color: #666;
     box-shadow:none !important;
-    border-color: #86b7fe;
+    border-color: var(--input--background);
   }
   
   // select {
