@@ -4,18 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+    <title>Tài khoản của tôi</title>
     <link
       href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
       rel="stylesheet"
       type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
   <body>
     <div class="page home__page" data-changing="false">
       <div class="page__sidebar">
@@ -323,7 +318,6 @@
       </div>
     </div>
   </div>
-
       <div class="page__content">
         <header id="header">
   <div class="header-top-wrapper">
@@ -396,146 +390,84 @@
         <div class="page__content--inner">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <div class="header-bottom">
-                <div class="header-bottom_options active">Thẻ cào</div>
-                <span></span>
-                <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
-                <i> - </i>
-                <div class="header-bottom_options">Thẻ cào</div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <div class="card-title">
-                  <h3>Khu nạp thẻ</h3>
-                </div>
-              </div>
-              <div class="card-body">
-                <form>
-                  <select class="mb-3" aria-label=".form-select-lg example">
-                    <option value="">Chọn nhà mạng</option>
-                    <option value="VIETTEL">VIETTEL</option>
-                    <option value="VINAPHONE">VINAPHONE</option>
-                    <option value="MOBIFONE">MOBIFONE</option>
-                    <option value="VNMB">Vietnammobile</option>
-                    <option value="ZING">Zing</option>
-                    <option value="GARENA2">Garena</option>
-                    <option value="GATE">GATE</option>
-                    <option value="VCOIN">Vcoin</option>
-                  </select>
-
-                  <select id="denominations" class="mb-3">
-                    <option value="">Chọn mệnh giá</option>
-                    <option value="10000">
-                      10.000 đ (9.7%) thực nhận (9.030 đ)
-                    </option>
-                    <option value="20000">
-                      20.000 đ (9.7%) thực nhận (18.060 đ)
-                    </option>
-                    <option value="30000">
-                      30.000 đ (9.7%) thực nhận (27.090 đ)
-                    </option>
-                    <option value="50000">
-                      50.000 đ (9.7%) thực nhận (45.150 đ)
-                    </option>
-                    <option value="100000">
-                      100.000 đ (9.7%) thực nhận (90.300 đ)
-                    </option>
-                    <option value="200000">
-                      200.000 đ (9.7%) thực nhận (180.600 đ)
-                    </option>
-                    <option value="300000">
-                      300.000 đ (9.7%) thực nhận (270.900 đ)
-                    </option>
-                    <option value="500000">
-                      500.000 đ (10.5%) thực nhận (447.500 đ)
-                    </option>
-                  </select>
-
-                  <input
-                    class="mb-3"
-                    type="number"
-                    name="card-code"
-                    placeholder="Mã số thẻ" />
-                  <input
-                    class="mb-3"
-                    type="number"
-                    name="card-seri"
-                    placeholder="Số serial" />
-                  <div class="d-flex mb-4">
-                    <input
-                      type="text"
-                      name="capcha"
-                      placeholder="Nhập mã capcha" />
-                    <img
-                      src="https://sieuthicode.net//auth/gencaptcha"
-                      alt="capcha" />
+              <div class="header-bottom-wrapper">
+                <div class="header-bottom">
+                  <div class="header-bottom_options active">
+                    Tài khoản của tôi
                   </div>
-                  <button class="btn page-btn" type="submit">Nạp thẻ</button>
-                </form>
+                  <span></span>
+                  <a href="index.html" class="redirect-home">
+                    Bảng điều khiển
+                  </a>
+                  <i> - </i>
+                  <div class="header-bottom_options">Tài khoản của tôi</div>
+                </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="card-header">
-                <div class="card-title">
-                  <h3>Lịch sử nạp thẻ</h3>
+            <div class="row mb-5">
+              <div class="col-12 col-lg-3">
+                <div class="card-body only-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="fs-1 fw-bold text-card">0 đồng</div>
+                  </div>
+                  <div class="fs-5 fw-bold text-gray">Số dư tài khoản</div>
                 </div>
               </div>
-              <div class="card-body">
-                <div class="data__table--wrapper">
-                  <table
-                    style="width: 100%"
-                    class="table responsive dt-responsive nowrap dataTable no-footer">
-                    <thead>
-                      <tr>
-                        <th scope="col">Stt</th>
-                        <th scope="col">Loại thẻ</th>
-                        <th scope="col">Serial</th>
-                        <th scope="col">Mã thẻ</th>
-                        <th scope="col">Mệnh giá</th>
-                        <th scope="col">Thực nhận</th>
-                        <th scope="col">Trạng thái</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>1</th>
-                        <th>Mobiphone</th>
-                        <th>0123413131241341</th>
-                        <th>4542 1234 3213</th>
-                        <th>500.000 đ</th>
-                        <th>447.500 đ</th>
-                        <th>
-                          <div class="badge bg-success">Đã nạp</div>  
-                        </th>
-                      </tr>
-                      <tr>
-                        <th>2</th>
-                        <th>Viettel</th>
-                        <th>0123413131241341</th>
-                        <th>4542 1234 3213</th>
-                        <th>500.000 đ</th>
-                        <th>447.500 đ</th>
-                        <th>
-                          <div class="badge bg-warning">Đang nạp</div>  
-                        </th>
-                      </tr>
-                      <tr>
-                        <th>3</th>
-                        <th>Vinaphone</th>
-                        <th>0123413131241341</th>
-                        <th>4542 1234 3213</th>
-                        <th>500.000 đ</th>
-                        <th>447.500 đ</th>
-                        <th>
-                          <div class="badge bg-danger">Hủy nạp</div>  
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+            </div>
+            <div class="change-password">
+              <div class="change-password__top card-body">
+                <p class="header-bottom_options active">Đổi mật khẩu</p>
               </div>
+              <form>
+                <div class="change-password__body">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label class="required">Mật khẩu cũ:</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label class="required">Mật khẩu mới:</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label class="required">Nhập lại mật khẩu mới:</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="text" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="change-password__bottom">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3"></div>
+                      <div class="col-lg-9">
+                        <button class="btn page-btn" type="submit">
+                          Xác nhận
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -550,43 +482,14 @@
       <li>Purchase</li>
     </ul>
   </footer>
-        <div id="onload" class="modal fade message-homepage" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title fw-normal text-uppercase">Thông báo</h5>
-        </div>
-        <div class="modal-body">
-          <div class="box">
-            <h2><span>Trung gian - Đổi tiền</span> inbox admin: <a href="#" class="text-primary text-transform-none">Tại đây</a></h2>
-          </div>
-          <p>Từ ngày 01/12/2022 Web chỉ hỗ trợ nạp rút chính chủ, cố tình vi phạm sẽ khoá tài khoản vĩnh viễn, không hoàn trả số dư</p>
-          <p>thuê auto bank atm cho các web đối tác: <a class="text-primary text-uppercase" href="#">Xem tại đây</a></p>
-          <p>api <span class="purple-color">đổi thẻ</span> cào tự động : <a class="text-primary text-uppercase" href="#">Xem tại đây</a></p>
-          <p>bộ phận xử lý thẻ, check thẻ / rút tiền / hỗ trợ / đấu nối api: <a class="text-primary text-uppercase" href="#">tại đây</a></p>
-          <p>tạo web con: <a class="text-primary text-uppercase" href="#">tại đây</a></p>
-          <div class="box">
-            <div class="text-warning text-transform-none">Lỗi rút tiền momo vui lòng ib ad:<a href="#" class="text-primary text-transform-none">Tại đây</a></div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
-        </div>
       </div>
     </div>
-  </div>
-      </div>
-    </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
-    <script src="assets/js/boostrap.js"></script>
-    <script src="assets/js/main.js"></script>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/boostrap.js"></script>
+  <script src="assets/js/main.js"></script>
 </html>
