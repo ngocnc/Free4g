@@ -1,3 +1,7 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
 .page__content--inner{
     .header-bottom-wrapper {
       cursor: context-menu;
@@ -37,6 +41,9 @@
       padding: 4.25rem;
       border-radius: 0.625rem;
       box-shadow: 0 0 20px 0 rgba(76, 87, 125, 0.02);
+      @include media-breakpoint-down(lg) {
+        padding:2.25rem;
+      }
       &_detail {
         background-color: var(--plan--box-bg);
         transition: all 0.3s ease;

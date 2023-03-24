@@ -371,9 +371,10 @@
   tbody {
     tr {
       transition: background-color 0.3s ease, border-bottom 0.3s ease;
-      &:not(.child):hover {
+      &:not(.child):hover{
         background: var(--hover-data-table);
       }
+
       &:not(:last-of-type) {
         border-bottom: 1px solid var(--border-header-color);
       }
@@ -473,4 +474,21 @@
       border: none;
     }
   }
+}
+
+
+.page-btn{
+  color:variable.$blueColor;
+  background:#f1faff;
+  padding:calc(.75rem + 1px) calc(1.5rem + 1px);
+  border-radius:8px;
+  font-weight: 500;
+  &:hover{
+    background:variable.$blueColor;
+    color:variable.$whiteColor;
+  }
+}
+
+.card + .card{
+  margin-top:40px;
 }

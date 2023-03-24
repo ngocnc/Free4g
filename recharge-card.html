@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
     <link
       href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
       rel="stylesheet"
       type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
     <div class="page home__page" data-changing="false">
       <div class="page__sidebar">
@@ -390,242 +395,153 @@
   </header>
         <div class="page__content--inner">
           <div class="container">
-
             <div class="header-bottom-wrapper">
               <div class="header-bottom">
-                <div class="header-bottom_options active">
-                  Bảng điều khiển
-                </div>
+                <div class="header-bottom_options active">Thẻ cào</div>
                 <span></span>
-                <div class="header-bottom_options">Thông số tài khoản</div>
+                <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
+                <i> - </i>
+                <div class="header-bottom_options">Thẻ cào</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <h3>Khu nạp thẻ</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                <form>
+                  <select class="mb-3" aria-label=".form-select-lg example">
+                    <option value="">Chọn nhà mạng</option>
+                    <option value="VIETTEL">VIETTEL</option>
+                    <option value="VINAPHONE">VINAPHONE</option>
+                    <option value="MOBIFONE">MOBIFONE</option>
+                    <option value="VNMB">Vietnammobile</option>
+                    <option value="ZING">Zing</option>
+                    <option value="GARENA2">Garena</option>
+                    <option value="GATE">GATE</option>
+                    <option value="VCOIN">Vcoin</option>
+                  </select>
+
+                  <select id="denominations" class="mb-3">
+                    <option value="">Chọn mệnh giá</option>
+                    <option value="10000">
+                      10.000 đ (9.7%) thực nhận (9.030 đ)
+                    </option>
+                    <option value="20000">
+                      20.000 đ (9.7%) thực nhận (18.060 đ)
+                    </option>
+                    <option value="30000">
+                      30.000 đ (9.7%) thực nhận (27.090 đ)
+                    </option>
+                    <option value="50000">
+                      50.000 đ (9.7%) thực nhận (45.150 đ)
+                    </option>
+                    <option value="100000">
+                      100.000 đ (9.7%) thực nhận (90.300 đ)
+                    </option>
+                    <option value="200000">
+                      200.000 đ (9.7%) thực nhận (180.600 đ)
+                    </option>
+                    <option value="300000">
+                      300.000 đ (9.7%) thực nhận (270.900 đ)
+                    </option>
+                    <option value="500000">
+                      500.000 đ (10.5%) thực nhận (447.500 đ)
+                    </option>
+                  </select>
+
+                  <input
+                    class="mb-3"
+                    type="number"
+                    name="card-code"
+                    placeholder="Mã số thẻ" />
+                  <input
+                    class="mb-3"
+                    type="number"
+                    name="card-seri"
+                    placeholder="Số serial" />
+                  <input
+                    class="mb-3"
+                    type="number"
+                    name="card-seri"
+                    placeholder="Số serial" />
+                  <div class="d-flex mb-4">
+                    <input
+                      type="text"
+                      name="capcha"
+                      placeholder="Nhập mã capcha" />
+                    <img
+                      src="https://sieuthicode.net//auth/gencaptcha"
+                      alt="capcha" />
+                  </div>
+                  <button class="btn page-btn" type="submit">Nạp thẻ</button>
+                </form>
               </div>
             </div>
 
-            <section class="block">
-              <div class="row align-items-lg-center">
-                <div class="col-lg-8 d-lg-block d-none">
-                  <div class="block_progress"></div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                  <div class="block_options justify-content-start justify-content-lg-end">
-                    <div
-                      class="block_options-detail active-primary color-text-white">
-                      <i class="fas fa-rss"></i>
-                      <a href="#">Nhấp vào để đồng bộ máy chủ</a>
-                    </div>
-                    <div
-                      class="block_options-detail light-primary color-text-black">
-                      <i class="fas fa-cog"></i>
-                      <a href="#">Thao tác</a>
-                    </div>
-                    <div
-                      class="block_options-detail active-danger color-text-white">
-                      <a href="#">Lấy TK Shadowrocket & i2Ray</a>
-                    </div>
-                    <div
-                      class="block_options-detail active-info color-text-white">
-                      <a href="#">Download Clash Windows</a>
-                    </div>
-                  </div>
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <h3>Lịch sử nạp thẻ</h3>
                 </div>
               </div>
-            </section>
-            <section class="recharge">
-              <div class="recharge-background">
-                <img src="assets/images/17-dark.png" class="img-fluid" />
-              </div>
-              <div class="recharge-content">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="recharge-content_text">
-                      <h3>
-                        <span>Nạp tiền </span>&<span> Thanh toán</span> nhanh
-                        chóng
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="recharge-content_btn">
-                      <button
-                        type="button"
-                        class="active-danger btn btn-primary">
-                        Nạp tiền ngay
-                      </button>
-                    </div>
-                  </div>
+              <div class="card-body">
+                <div class="data__table--wrapper">
+                  <table
+                    style="width: 100%"
+                    class="table responsive dt-responsive nowrap dataTable no-footer">
+                    <thead>
+                      <tr>
+                        <th scope="col">Stt</th>
+                        <th scope="col">Loại thẻ</th>
+                        <th scope="col">Serial</th>
+                        <th scope="col">Mã thẻ</th>
+                        <th scope="col">Mệnh giá</th>
+                        <th scope="col">Thực nhận</th>
+                        <th scope="col">Trạng thái</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>1</th>
+                        <th>Mobiphone</th>
+                        <th>0123413131241341</th>
+                        <th>4542 1234 3213</th>
+                        <th>500.000 đ</th>
+                        <th>447.500 đ</th>
+                        <th>
+                          <div class="badge bg-success">Đã nạp</div>  
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Viettel</th>
+                        <th>0123413131241341</th>
+                        <th>4542 1234 3213</th>
+                        <th>500.000 đ</th>
+                        <th>447.500 đ</th>
+                        <th>
+                          <div class="badge bg-warning">Đang nạp</div>  
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Vinaphone</th>
+                        <th>0123413131241341</th>
+                        <th>4542 1234 3213</th>
+                        <th>500.000 đ</th>
+                        <th>447.500 đ</th>
+                        <th>
+                          <div class="badge bg-danger">Hủy nạp</div>  
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-            </section>
-            <section class="list-user">
-              <div class="list-user_header">
-                <h5 class="block-title">Thống kê người sử dụng</h5>
-              </div>
-              <table class="list-user_content" style="width: 100%">
-    <thead>
-      <tr>
-        <th style="width: 35%">Tên</th>
-        <th>Đang sử dụng</th>
-        <th>Trạng thái</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-            </section>
+            </div>
           </div>
         </div>
         <footer id="footer">
@@ -671,6 +587,10 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"></script>
     <script src="assets/js/popper.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
     <script src="assets/js/boostrap.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

@@ -11725,6 +11725,22 @@ h6 {
   border: none;
 }
 
+.page-btn {
+  color: #009ef7;
+  background: #f1faff;
+  padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
+  border-radius: 8px;
+  font-weight: 500;
+}
+.page-btn:hover {
+  background: #009ef7;
+  color: #fff;
+}
+
+.card + .card {
+  margin-top: 40px;
+}
+
 .page {
   position: relative;
 }
@@ -12286,6 +12302,11 @@ footer .footer-menu li:hover {
   padding: 4.25rem;
   border-radius: 0.625rem;
   box-shadow: 0 0 20px 0 rgba(76, 87, 125, 0.02);
+}
+@media (max-width: 991.98px) {
+  .page__content--inner .list-service {
+    padding: 2.25rem;
+  }
 }
 .page__content--inner .list-service_detail {
   background-color: var(--plan--box-bg);
