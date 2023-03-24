@@ -16,6 +16,7 @@ $bs-active-danger-bland: #f1416c;
 $bs-gray-100: #f5f8fa;
 $bs-gray-200: #eff2f5;
 $bs-gray-300: #e4e6ef;
+$bs-gray-400: #b5b5c3;
 $bs-gray-500: #a1a5b7;
 $bs-gray-600: #7e8299;
 $bs-gray-900: #181c32;
@@ -38,7 +39,10 @@ html {
 
   --heading-bottom--text--color: #{$bs-gray-500};
 
-  --plan--box-bg: #f8fafb
+  --plan--box-bg: #f8fafb;
+  --input--background: #f5f8fa;
+
+  --gray--lighter--text:#{$bs-gray-400};
 }
 
 .dark-mode {
@@ -56,4 +60,7 @@ html {
   --heading-bottom--text--color:#{$whiteColor};
 
   --plan--box-bg:rgb(36, 37, 37);
+  --input--background:rgb(36, 37, 37);
+
+  --gray--lighter--text:#{$whiteColor};
 }

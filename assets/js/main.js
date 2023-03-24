@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
   let homepages = [ '/', '/index.html', '/index.php', '/Free4g/'];
   if (homepages.indexOf(window.location.pathname) >= 0) {
     const myModal = new bootstrap.Modal('#onload');
@@ -137,20 +139,33 @@ $(document).ready(function () {
 
   // Change darkmode
   $(".changing-mode").on("click",function(){
+
     $("body").toggleClass("dark-mode");
     if($("body").hasClass("dark-mode")){
       $(".changing-mode").find("i").attr('class', 'fal fa-moon')
+      localStorage.setItem("dark-mode", true);
     }else{
       $(".changing-mode").find("i").attr('class', 'fal fa-sun')
+      localStorage.setItem("dark-mode", false);
     }
   })
+
+  $(window).on("load",function(){
+    if (localStorage.getItem('dark-mode') === 'true') {
+      $("body").addClass("dark-mode");
+      $(".changing-mode").find("i").attr('class', 'fal fa-moon')
+    }
+  })
+
+
+
   $(".icon-toggle").each(function(index,item){
     $(item).on("click",function(){
       $(this).parent().find(".sub__menu--toggle").addClass("show")
     })
   })
-  // Responsive for fucking table
-  $(".table").each(function(index,item){
+  
+  $(".page-table").each(function(index,item){
     $(item).DataTable({
       "dom": 'Bfrtip',
       "sort": false,
@@ -165,5 +180,24 @@ $(document).ready(function () {
       }
       }
     });
+  })
+  $("table.no-search").each(function(index,item){
+      $(item).DataTable({
+        "dom": 'Bfrtip',
+        "sort": false,
+        "searching": false,
+        "paging": false,
+        "info": false,
+        "language": {
+          "sProcessing": "Đang tải dữ liệu...",
+          "sInfo": "Hiển thị _START_ đến _END_ của _TOTAL_ bản ghi",
+          "oPaginate": {
+            "sFirst": "Đầu",
+            "sPrevious": "Trước",
+            "sNext": "Sau",
+            "sLast": "Cuối"
+        }
+        }
+      });
   })
 });

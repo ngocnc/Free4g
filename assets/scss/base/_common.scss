@@ -492,3 +492,18 @@
 .card + .card{
   margin-top:40px;
 }
+
+.card-body.only-body{
+  border-radius:8px;
+  transition: color 0.3s ease,background 0.3s ease;
+  .text-card{
+    color:var(--dark--text--color);
+  }
+  .text-gray{
+    color:var(--gray--lighter--text);
+  }
+  button{
+    background:variable.$blueColor;
+    color:variable.$whiteColor;
+  }
+}
