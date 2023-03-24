@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+    <link
+      href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="page home__page" data-changing="false">
+      @@include('../layout/sidebar.html')
+
+      <div class="page__content">
+        @@include('../layout/header.html')
+        <div class="page__content--inner">
+          <div class="container">
+            <div class="header-bottom-wrapper">
+              <div class="header-bottom">
+                <div class="header-bottom_options active">Gift Code</div>
+                <span></span>
+                <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
+                <i> - </i>
+                <div class="header-bottom_options">Gift Code</div>
+              </div>
+            </div>
+
+            <div class="row mb-5 g-4">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <h3>Gift Code đã sử dụng</h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label>Số tiền</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="number" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="offset-lg-3 col-lg-9">
+                        <button class="btn page-btn">Xác nhận</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <h3>Tạo Gift Code</h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="notice notice-danger mb-5">
+                      <span class="page-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none">
+                          <path
+                            opacity="0.3"
+                            d="M22 19V17C22 16.4 21.6 16 21 16H8V3C8 2.4 7.6 2 7 2H5C4.4 2 4 2.4 4 3V19C4 19.6 4.4 20 5 20H21C21.6 20 22 19.6 22 19Z"
+                            fill="black"></path>
+                          <path
+                            d="M20 5V21C20 21.6 19.6 22 19 22H17C16.4 22 16 21.6 16 21V8H8V4H19C19.6 4 20 4.4 20 5ZM3 8H4V4H3C2.4 4 2 4.4 2 5V7C2 7.6 2.4 8 3 8Z"
+                            fill="black"></path>
+                        </svg>
+                      </span>
+                      <div class="notice-content">
+                        <div class="mb-3">
+                          Tài khoản có 5 người giới thiệu sử dụng gói 5k/tháng
+                          trở lên mới được sử dụng
+                        </div>
+                        +10% giá trị tạo Gift code
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label>Số tiền</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="number" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label>Số tiền</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="number" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="offset-lg-3 col-lg-9">
+                        <button class="btn page-btn">Xác nhận</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <h3>Gift Code đã sử dụng</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary">CSV</button>
+                  <button type="button" class="btn btn-secondary">Excel</button>
+                  <button type="button" class="btn btn-secondary">PDF</button>
+                </div>
+                <div class="data__table--wrapper">
+                  <table
+                    style="width: 100%"
+                    class="table page-table responsive dt-responsive nowrap dataTable no-footer">
+                    <thead>
+                      <tr>
+                        <th scope="col"># Mã đơn hàng</th>
+                        <th scope="col">Chu kỳ</th>
+                        <th scope="col">Tiền đơn hàng</th>
+                        <th scope="col">Trạng thái đơn</th>
+                        <th scope="col">Thời gian tạo</th>
+                        <th scope="col">Thao tác</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>MDH-0123</th>
+                        <th>1</th>
+                        <th>1.000.000đ</th>
+                        <th>
+                          <div class="badge bg-danger">Quá hạn</div>
+                        </th>
+                        <th class="time">17:18:41 20/03/2023</th>
+                        <th>
+                          <a href="#">Xem chi tiết</a>
+                          <a href="#" class="cancal">Huỷ</a>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @@include('../layout/footer.html')
+        @@include('../layout/message-homepage.html')
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/js/boostrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

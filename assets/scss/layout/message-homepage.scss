@@ -1,4 +1,13 @@
 .message-homepage{
+    .modal-content{
+        background:var(--white--color);
+        transition: all 0.3s ease;
+        color:var(--dark--text--color);
+    }
+    .modal-header{
+        border-bottom:1px solid var(--border-header-color);
+        transition: border-bottom 0.3s ease;
+    }
     .modal-body{
         .box{
             padding:10px;
@@ -7,9 +16,10 @@
             border: 1px solid #ccc;
             margin-bottom:10px;
             h2{
-                font-size:14px;
+                font-size: 14px;
                 text-transform: uppercase;
-                margin-bottom:0;
+                margin-bottom: 0;
+                color: #000;
                 span{
                     color: 
                     #de5052;
@@ -22,5 +32,9 @@
                 margin-bottom:10px;
             }
         }
+    }
+    .modal-footer{
+        border-top:1px solid var(--border-header-color);
+        transition: border-top 0.3s ease;
     }
 }

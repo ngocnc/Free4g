@@ -44,7 +44,7 @@
                                 0 đồng
                             </div>
                             <div class="button-card align-self-start">
-                                <button class="btn">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     <i class="fal fa-money-check-alt"></i>
                                     Quy đổi
                                 </button>
@@ -54,6 +54,28 @@
                             Số dư hoa hồng
                         </div>
                     </div>
+
+                    <div class="modal fade message-homepage" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <form action="">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Quy đổi hoa hồng</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                   <div class="form-group">
+                                      <label class="required">Số tiền</label>
+                                      <input type="number" placeholder="Nhập số tiền bạn muốn chuyển đổi">
+                                   </div>
+                                  </div>
+                                  <div class="modal-footer justify-content-start">
+                                    <button type="submit" class="btn text-start btn-primary" data-bs-dismiss="modal">Xác nhận</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </form>
+                      </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="card-body only-body">
@@ -85,7 +107,7 @@
                 <div class="card-header">
                     <div class="card-title">
                       <h3>Quản lý mã mời</h3>
-                      <button>ok</button>
+                      <button class="btn btn-success">Tạo mã mới</button>
                     </div>
                   </div>
                   <div class="card-body">
@@ -93,12 +115,9 @@
                         <table style="width:100%" class="table responsive dt-responsive nowrap dataTable no-footer no-search">
                             <thead>
                                 <tr>
-                                    <th scope="col"># Mã đơn hàng</th>
-                                    <th scope="col">Chu kỳ</th>
-                                    <th scope="col">Tiền đơn hàng</th>
-                                    <th scope="col">Trạng thái đơn</th>
+                                    <th scope="col">Mã mời</th>
                                     <th scope="col">Thời gian tạo</th>
-                                    <th scope="col">Thao tác</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -106,14 +125,6 @@
                                     <th>MDH-0123</th>
                                     <th>1</th>
                                     <th>1.000.000đ</th>
-                                    <th>
-                                        <div class="badge bg-danger">Quá hạn</div>  
-                                    </th>
-                                    <th class="time">17:18:41 20/03/2023</th>
-                                    <th>
-                                      <a href="#">Xem chi tiết</a>
-                                      <a href="#" class="cancal">Huỷ</a>
-                                    </th>
                                 </tr>
                             </tbody>
                         </table>

@@ -53,6 +53,7 @@
     }
     &__content {
       padding-left: 100px;
+      transition: padding-left 0.3s ease, background 0.3s ease;
       header {
         left: 100px;
         transition: left 0.3s ease;
@@ -107,16 +108,16 @@
         }
       }
       .header-bottom {
-        flex-wrap:wrap;
-        gap:6px;
+        flex-wrap: wrap;
+        gap: 6px;
         padding: 0 1.8em 1em 0;
-        span{
-          background:none;
-          height:auto;
-          width:auto;
-          &::after{
+        span {
+          background: none;
+          height: auto;
+          width: auto;
+          &::after {
             content: "-";
-            color:var(--dark--text--color);
+            color: var(--dark--text--color);
             transition: color 0.3s ease;
           }
         }
@@ -202,11 +203,11 @@
   display: inline-block;
 }
 
-.dark-mode{
-  .sub__menu--toggle{
-    .menu__item{
-      & > .menu__content:hover{
-        background:variable.$blackColor;
+.dark-mode {
+  .sub__menu--toggle {
+    .menu__item {
+      & > .menu__content:hover {
+        background: variable.$blackColor;
       }
     }
   }
@@ -240,7 +241,7 @@
     a {
       display: block;
       width: 100%;
-      color:var(--dark--text--color);
+      color: var(--dark--text--color);
     }
   }
   .menu__item {
@@ -293,11 +294,41 @@
       font-size: 1.25rem;
       font-weight: 600;
     }
+    button {
+      margin-left: 15px;
+      border-radius: 2rem;
+      color: variable.$whiteColor;
+    }
   }
   &-body {
     padding: 2rem 2.25rem;
     background: var(--heading--table);
     transition: background 0.3s ease;
+
+    .notice {
+      padding: 1.5rem;
+      display: flex;
+      border: 1px dashed #eff2f5 !important;
+      border-radius: 8px;
+      .page-icon{
+        margin-right:1rem;
+      }
+      .notice-content{
+        font-size:1.075rem;
+      }
+      &.notice-danger {
+        border-color: rgba(246, 78, 96, 0.5) !important;
+        background-color: #fff5f8 !important;
+        svg {
+          height: 35px;
+          width: 35px;
+          path {
+            fill: #f1416c;
+          }
+        }
+      }
+    }
+
     .dataTables_filter {
       text-align: right;
       padding: 1rem 0;
@@ -317,6 +348,13 @@
     @include media-breakpoint-down(md) {
       padding: 2rem 1rem;
     }
+  }
+  &-footer {
+    padding: 2rem 2.25rem;
+    background: var(--heading--table);
+    border-top: 1px solid var(--border-header-color);
+    // color: var(--dark--text--color);
+    transition: background 0.3s ease, border-top 0.3s ease, color 0.3s ease;
   }
 }
 
@@ -371,7 +409,7 @@
   tbody {
     tr {
       transition: background-color 0.3s ease, border-bottom 0.3s ease;
-      &:not(.child):hover{
+      &:not(.child):hover {
         background: var(--hover-data-table);
       }
 
@@ -476,34 +514,55 @@
   }
 }
 
-
-.page-btn{
-  color:variable.$blueColor;
-  background:#f1faff;
-  padding:calc(.75rem + 1px) calc(1.5rem + 1px);
-  border-radius:8px;
+.page-btn {
+  color: variable.$blueColor;
+  background: #f1faff;
+  padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
+  border-radius: 8px;
   font-weight: 500;
-  &:hover{
-    background:variable.$blueColor;
-    color:variable.$whiteColor;
+  &:hover {
+    background: variable.$blueColor;
+    color: variable.$whiteColor;
   }
 }
 
-.card + .card{
-  margin-top:40px;
+.card + .card {
+  margin-top: 40px;
 }
 
-.card-body.only-body{
-  border-radius:8px;
-  transition: color 0.3s ease,background 0.3s ease;
-  .text-card{
-    color:var(--dark--text--color);
+.card-body.only-body {
+  border-radius: 8px;
+  transition: color 0.3s ease, background 0.3s ease;
+  .text-card {
+    color: var(--dark--text--color);
   }
-  .text-gray{
-    color:var(--gray--lighter--text);
+  .text-gray {
+    color: var(--gray--lighter--text);
   }
-  button{
-    background:variable.$blueColor;
-    color:variable.$whiteColor;
+  button {
+    background: variable.$blueColor;
+    color: variable.$whiteColor;
   }
+}
+
+.form-group {
+  label {
+    color: var(--dark--text--color);
+    transition: color 0.3s ease;
+  }
+  .required {
+    position: relative;
+    &::after {
+      content: "*";
+      position: relative;
+      font-size: inherit;
+      color: #f1416c;
+      padding-left: 0.25rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.form-group + .form-group {
+  margin-top: 20px;
 }
