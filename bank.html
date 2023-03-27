@@ -1,4 +1,26 @@
-<div class="page__sidebar">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+    <link
+      href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="page home__page" data-changing="false">
+      <div class="page__sidebar">
     <!-- Sidebar logo -->
     <div class="page__sidebar--logo">
       <a href="index.html">Speed4g Network</a>
@@ -323,3 +345,161 @@
       </div>
     </div>
   </div>
+
+      <div class="page__content">
+        <header id="header">
+  <div class="header-top-wrapper">
+    <div class="container-fluid">
+      <div class="header-top">
+        <div class="mobile-nav d-flex d-lg-none align-items-center">
+          <span class="hamburger-nav page-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="black"></path>
+              <path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="black"></path>
+            </svg>
+          </span>
+          <div class="mobile-logo">
+            <a href="index.html">
+              <img src="assets/images/logo-2.png" alt="mobile logo">
+            </a>
+          </div>
+        </div>
+        <div style="height:55px" class="ms-auto d-flex align-items-center">
+          <div class="changing-mode">
+            <i class="fal fa-sun"></i>
+          </div>
+          <div class="avatar toggle__menu">
+            <i class="fal fa-user-circle icon-toggle"></i>
+            <div class="sub__menu--toggle py-4">
+              <div class="menu__header px-3">
+                <div class="menu__content">
+                  <a href="javascript:void(0)" class="gray-text">
+                    hoviethung.work@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div class="seperator my-2"></div>
+              <div class="menu__item px-3">
+                <div class="menu__content">
+                  <a href="javascript:void(0)" class="gray-text">
+                    Lời mời của tôi
+                  </a>
+                </div>
+              </div>
+              <div class="menu__item px-3">
+                <div class="menu__content">
+                  <a href="javascript:void(0)" class="gray-text">
+                   Tài khoản của tôi
+                  </a>
+                </div>
+              </div>
+              <div class="menu__item px-3">
+                <div class="menu__content">
+                  <a href="javascript:void(0)" class="gray-text">
+                   Nạp tiền
+                  </a>
+                </div>
+              </div>
+              <div class="seperator my-2"></div>
+              <div class="menu__item px-3">
+                <div class="menu__content">
+                  <a href="javascript:void(0)" class="gray-text">
+                   Đăng xuất
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+        <div class="page__content--inner">
+          <div class="container">
+            <div class="header-bottom-wrapper">
+              <div class="header-bottom">
+                <div class="header-bottom_options active">Nạp tiền</div>
+                <span></span>
+                <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
+                <i> - </i>
+                <div class="header-bottom_options">Ngân hàng</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <h3>Nạp tiền qua ngân hàng</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>* Nạp ATM/Momo <br> Ví Dụ: <br> 100k ATM/Momo = 100k Trên Shop</p>
+                <p>THÔNG TIN TÀI KHOẢN NGÂN HÀNG
+                  <br> ✔ :  Ngân hàng
+                  <br> Chủ tài khoản: HO VIET Hung
+                  <br>STK/SDT: 0913123412341
+                  <br>Chuyển khoản đúng nội dung, hệ thống sẽ tự động cộng tiền
+                </p>
+              </div>
+              <div class="card-footer">
+                <p>Nội dung chuyển khoản của bạn:</p>
+                <div class="d-flex align-items-center justify-content-center">
+                    <input value="naptien1429" readonly class="copy-border"></input>
+                    <button class="btn page-btn copy-button">Sao chép</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer id="footer">
+    <div class="footer-text">
+      <span>2022 - 2023 ©</span>
+      <a href="#">🍎 4G VIP FREE4G.VN 🍎</a>
+    </div>
+    <ul class="footer-menu">
+      <li>About</li>
+      <li>Support</li>
+      <li>Purchase</li>
+    </ul>
+  </footer>
+        <div id="onload" class="modal fade message-homepage" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-normal text-uppercase">Thông báo</h5>
+        </div>
+        <div class="modal-body">
+          <div class="box">
+            <h2><span>Trung gian - Đổi tiền</span> inbox admin: <a href="#" class="text-primary text-transform-none">Tại đây</a></h2>
+          </div>
+          <p>Từ ngày 01/12/2022 Web chỉ hỗ trợ nạp rút chính chủ, cố tình vi phạm sẽ khoá tài khoản vĩnh viễn, không hoàn trả số dư</p>
+          <p>thuê auto bank atm cho các web đối tác: <a class="text-primary text-uppercase" href="#">Xem tại đây</a></p>
+          <p>api <span class="purple-color">đổi thẻ</span> cào tự động : <a class="text-primary text-uppercase" href="#">Xem tại đây</a></p>
+          <p>bộ phận xử lý thẻ, check thẻ / rút tiền / hỗ trợ / đấu nối api: <a class="text-primary text-uppercase" href="#">tại đây</a></p>
+          <p>tạo web con: <a class="text-primary text-uppercase" href="#">tại đây</a></p>
+          <div class="box">
+            <div class="text-warning text-transform-none">Lỗi rút tiền momo vui lòng ib ad:<a href="#" class="text-primary text-transform-none">Tại đây</a></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/js/boostrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

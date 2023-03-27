@@ -355,6 +355,14 @@
     border-top: 1px solid var(--border-header-color);
     // color: var(--dark--text--color);
     transition: background 0.3s ease, border-top 0.3s ease, color 0.3s ease;
+
+    .copy-border{
+      border: 1px dashed rgba(246, 78, 96, 0.5);
+      margin-right:10px;
+      padding:10px;
+      border-radius:8px;
+      outline:none;
+    }
   }
 }
 
@@ -566,3 +574,4 @@
 .form-group + .form-group {
   margin-top: 20px;
 }
+
