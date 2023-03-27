@@ -12648,6 +12648,11 @@ footer .footer-menu li:hover {
   color: var(--dark--text--color);
 }
 
+.change-password .change-password__body {
+  border-top: 1px solid var(--border-header-color);
+  border-bottom: 1px solid var(--border-header-color);
+}
+
 /*******************************
         TABLE OF CONTENT
 ********************************
