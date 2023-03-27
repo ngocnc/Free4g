@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+    <link
+      href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="page home__page" data-changing="false">
+      @@include('../layout/sidebar.html')
+
+      <div class="page__content">
+        @@include('../layout/header.html')
+        <div class="page__content--inner">
+          <div class="container">
+            <div class="header-bottom-wrapper">
+              <div class="header-bottom">
+                <div class="header-bottom_options active">
+                  Tài khoản của tôi
+                </div>
+                <span></span>
+                <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
+                <i> - </i>
+                <div class="header-bottom_options">Tài khoản của tôi</div>
+              </div>
+            </div>
+
+            <div class="row mb-5 g-4">
+              <div class="col-lg-6">
+                <div class="card-body only-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="fs-1 fw-bold text-card">0 đồng</div>
+                  </div>
+                  <div class="fs-5 fw-bold text-gray">Số dư tài khoản</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <form>
+                <div class="card-header">
+                  <div class="card-title">
+                    <h3>Đổi mật khẩu</h3>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label class="required">Mật khẩu cũ</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="password">
+                        </div>
+                      </div>
+                    </div>
+                  <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label class="required">Mật khẩu mới</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="number">
+                        </div>
+                      </div>
+                    </div>
+                  <div class="form-group">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <label class="required">Nhập lại mật khẩu mới</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <input type="number">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="offset-lg-3 col-lg-9">
+                      <button class="btn page-btn" type="submit">Xác nhận</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        @@include('../layout/footer.html')
+        @@include('../layout/message-homepage.html')
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/js/boostrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
