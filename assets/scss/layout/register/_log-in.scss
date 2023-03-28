@@ -1,0 +1,123 @@
+.log-in {
+  height: 100vh;
+  @media only screen and (max-width: 576px) {
+    font-size: 12px;
+  }
+  // @media only screen and (min-width: 576px) and (max-width: 1200px) {
+  //   height: 250vh;
+  // }
+  .log-in_wrapper {
+    gap: 10em;
+    .log-in_content {
+      gap: 3em;
+      .log-in_logo {
+        margin-top: 3em;
+        width: 5em;
+      }
+      .log-in_box {
+        padding: 4em 3.8em 6em 3.8em;
+        width: 40em;
+        @media only screen and (max-width: 576px) {
+          width: 100%;
+        }
+        .log-in_box-header {
+          h3 {
+            font-size: 1.9em;
+            font-weight: 600;
+          }
+          p {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #b7c5de;
+            margin-top: 0.7em;
+            a {
+              color: #00adf9;
+              font-weight: 600;
+              font-size: 1.1em;
+              transition: all 0.8s ease;
+              &:hover {
+                color: #75d0fd;
+              }
+            }
+          }
+        }
+        form {
+          padding: 2em 0 2.5em;
+          border-bottom: 1px solid #c5c6cc;
+          .form-email {
+            .form-email_text {
+              color: #181c32;
+              font-weight: 600;
+              font-size: 1.1em;
+            }
+            .form-email_input {
+              margin-top: 0.3em;
+              padding: 0.2em 0.6em;
+              background-color: #f5f8fa;
+            }
+          }
+          .form-password {
+            margin-top: 2.5em;
+            .form-password_text {
+              color: #181c32;
+              font-weight: 600;
+              font-size: 1.1em;
+              a {
+                color: #00adf9;
+                transition: all 0.8s ease;
+                &:hover {
+                  color: #75d0fd;
+                }
+              }
+            }
+            .form-password_input {
+              margin-top: 0.3em;
+              padding: 0.2em 0.6em;
+              background-color: #f5f8fa;
+            }
+          }
+          .login-btn {
+            margin-top: 2.5em;
+            padding: 0.6em 0;
+            font-size: 1.15em;
+            background-color: #009ef7;
+            border: none;
+          }
+        }
+        .log-in_box-contact {
+          margin-top: 1em;
+          h4 {
+            font-size: 1.3em;
+            font-weight: 600;
+          }
+          .log-in_box-contact_social {
+            margin-top: 1.4em;
+            gap: 3em;
+            height: 2.5em;
+            a {
+              display: block;
+              width: 2.5em;
+              height: 100%;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .log-in_about {
+      gap: 1em;
+      a {
+        color: #c5c6cc;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        &:hover {
+          color: #009ef7;
+        }
+      }
+    }
+  }
+}
