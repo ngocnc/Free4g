@@ -3,10 +3,13 @@
   @media only screen and (min-height: 576px) {
     height: 100vh;
   }
-  @media only screen and (min-width: 576px) and (max-width: 992px)and (min-height: 576px){
+  @media only screen and (min-width: 576px) and (max-width: 992px) and (min-height: 576px) {
     font-size: 16px;
   }
-  .log-in_wrapper {
+  @media only screen and (min-width: 1600px) {
+    font-size: 13px;
+  }
+  &_wrapper {
     gap: 6em;
     .log-in_content {
       gap: 3em;
@@ -20,7 +23,7 @@
         @media only screen and (max-width: 576px) {
           width: 100%;
         }
-        .log-in_box-header {
+        &-header {
           h3 {
             font-size: 1.9em;
             font-weight: 600;
@@ -45,12 +48,12 @@
           padding: 2em 0 2.5em;
           border-bottom: 1px solid #c5c6cc;
           .form-email {
-            .form-email_text {
+            &_text {
               color: #181c32;
               font-weight: 600;
               font-size: 1.1em;
             }
-            .form-email_input {
+            &_input {
               margin-top: 0.3em;
               padding: 0.2em 0.6em;
               background-color: #f5f8fa;
@@ -58,7 +61,7 @@
           }
           .form-password {
             margin-top: 2.5em;
-            .form-password_text {
+            &_text {
               color: #181c32;
               font-weight: 600;
               font-size: 1.1em;
@@ -70,7 +73,7 @@
                 }
               }
             }
-            .form-password_input {
+            &_input {
               margin-top: 0.3em;
               padding: 0.2em 0.6em;
               background-color: #f5f8fa;
@@ -90,7 +93,7 @@
             font-size: 1.3em;
             font-weight: 600;
           }
-          .log-in_box-contact_social {
+          &_social {
             margin-top: 1.4em;
             gap: 3em;
             height: 2.5em;
