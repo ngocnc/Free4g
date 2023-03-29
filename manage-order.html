@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tài khoản của tôi</title>
-    <link
-      href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
-      rel="stylesheet"
-      type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+        <link
+          href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
+          rel="stylesheet"
+          type="text/css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+      </head>
+<body>
     <div class="page home__page" data-changing="false">
-      <div class="page__sidebar">
+        <div class="page__sidebar">
     <!-- Sidebar logo -->
     <div class="page__sidebar--logo">
       <a href="index.html">Speed4g Network</a>
@@ -338,8 +342,9 @@
       </div>
     </div>
   </div>
-      <div class="page__content">
-        <header id="header">
+  
+        <div class="page__content">
+          <header id="header">
   <div class="header-top-wrapper">
     <div class="container-fluid">
       <div class="header-top">
@@ -407,91 +412,88 @@
     </div>
   </div>
   </header>
-        <div class="page__content--inner">
-          <div class="container">
-            <div class="header-bottom-wrapper">
+          <div class="page__content--inner">
+            <div class="container">
               <div class="header-bottom-wrapper">
                 <div class="header-bottom">
-                  <div class="header-bottom_options active">
-                    Tài khoản của tôi
-                  </div>
+                  <div class="header-bottom_options active">Đơn hàng của tôi</div>
                   <span></span>
-                  <a href="index.html" class="redirect-home">
-                    Bảng điều khiển
-                  </a>
+                  <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
                   <i> - </i>
-                  <div class="header-bottom_options">Tài khoản của tôi</div>
+                  <div class="header-bottom_options">
+                    Đơn hàng của tôi
+                </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row mb-5">
-              <div class="col-12 col-lg-3">
-                <div class="card-body only-body">
-                  <div
-                    class="d-flex justify-content-between align-items-center">
-                    <div class="fs-1 fw-bold text-card">0 đồng</div>
+              <div class="card">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <h3>Đơn hàng của tôi</h3>
+                    </div>
                   </div>
-                  <div class="fs-5 fw-bold text-gray">Số dư tài khoản</div>
-                </div>
-              </div>
-            </div>
-            <div class="change-password">
-              <div class="change-password__top card-body">
-                <p class="header-bottom_options active">Đổi mật khẩu</p>
-              </div>
-              <form>
-                <div class="change-password__body">
                   <div class="card-body">
-                    <div class="form-group">
-                      <div class="row align-items-center">
-                        <div class="col-lg-3">
-                          <label class="required">Mật khẩu cũ:</label>
-                        </div>
-                        <div class="col-lg-9">
-                          <input type="text" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="row align-items-center">
-                        <div class="col-lg-3">
-                          <label class="required">Mật khẩu mới:</label>
-                        </div>
-                        <div class="col-lg-9">
-                          <input type="text" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="row align-items-center">
-                        <div class="col-lg-3">
-                          <label class="required">Nhập lại mật khẩu mới:</label>
-                        </div>
-                        <div class="col-lg-9">
-                          <input type="text" />
-                        </div>
-                      </div>
+                   
+                    <div class="data__table--wrapper">
+                        <table style="width:100%" class="table responsive dt-responsive nowrap dataTable no-footer no-search">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#Mã đơn hàng</th>
+                                    <th scope="col">Chu kỳ</th>
+                                    <th scope="col">Tổng tiền đơn hàng</th>
+                                    <th scope="col">Trạng thái đơn hàng</th>
+                                    <th scope="col">Thời gian khởi tạo</th>
+                                    <th scope="col">Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th>2023032719034127867</th>
+                                    <th>1 tháng</th>
+                                    <th>6.000đ</th>
+                                    <th><a href="">Đã hủy</a></th>
+                                    <th class="time">17:18:41 20/03/2023</th>
+                                    <th>
+                                      <a href="#" class="cancal">Huỷ</a>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>2023032719034127867</th>
+                                      <th>1 tháng</th>
+                                      <th>6.000đ</th>
+                                      <th><a href="">Đã hủy</a></th>
+                                      <th class="time">19:44 27/03/2023</th>
+                                      <th>
+                                        <a href="#" class="cancal">Huỷ</a>
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                    <th>202303192303468522</th>
+                                      <th>1 tháng</th>
+                                      <th>6.000đ</th>
+                                      <th><a href="">Đã hủy</a></th>
+                                      <th class="time"> 19/03/2023</th>
+                                      <th>
+                                        <a href="#" class="cancal">Huỷ</a>
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                    <th>2023031719030093901</th>
+                                      <th>1 tháng</th>
+                                      <th>6.000đ</th>
+                                      <th><a href="">Đã hủy</a></th>
+                                      <th class="time"> 17/03/2023</th>
+                                      <th>
+                                        <a href="#" class="cancal">Huỷ</a>
+                                      </th>
+                                  </tr>
+                            </tbody>
+                        </table>
                     </div>
                   </div>
                 </div>
-                <div class="change-password__bottom">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-lg-3"></div>
-                      <div class="col-lg-9">
-                        <button class="btn page-btn" type="submit">
-                          Xác nhận
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
-        </div>
-        <footer id="footer">
+          <footer id="footer">
     <div class="footer-text">
       <span>2022 - 2023 ©</span>
       <a href="#">🍎 4G VIP FREE4G.VN 🍎</a>
@@ -502,14 +504,43 @@
       <li>Purchase</li>
     </ul>
   </footer>
+          <div id="onload" class="modal fade message-homepage" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-normal text-uppercase">Thông báo</h5>
+        </div>
+        <div class="modal-body">
+          <div class="box">
+            <h2><span>Trung gian - Đổi tiền</span> inbox admin: <a href="#" class="text-primary text-transform-none">Tại đây</a></h2>
+          </div>
+          <p>Từ ngày 01/12/2022 Web chỉ hỗ trợ nạp rút chính chủ, cố tình vi phạm sẽ khoá tài khoản vĩnh viễn, không hoàn trả số dư</p>
+          <p>thuê auto bank atm cho các web đối tác: <a class="text-primary text-uppercase" href="#">Xem tại đây</a></p>
+          <p>api <span class="purple-color">đổi thẻ</span> cào tự động : <a class="text-primary text-uppercase" href="#">Xem tại đây</a></p>
+          <p>bộ phận xử lý thẻ, check thẻ / rút tiền / hỗ trợ / đấu nối api: <a class="text-primary text-uppercase" href="#">tại đây</a></p>
+          <p>tạo web con: <a class="text-primary text-uppercase" href="#">tại đây</a></p>
+          <div class="box">
+            <div class="text-warning text-transform-none">Lỗi rút tiền momo vui lòng ib ad:<a href="#" class="text-primary text-transform-none">Tại đây</a></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+        </div>
       </div>
     </div>
-  </body>
-  <script
-    src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-    crossorigin="anonymous"></script>
-  <script src="assets/js/popper.js"></script>
-  <script src="assets/js/boostrap.js"></script>
-  <script src="assets/js/main.js"></script>
+  </div>
+        </div>
+      </div>
+      <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/js/boostrap.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
