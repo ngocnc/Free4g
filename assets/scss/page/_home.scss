@@ -12,8 +12,8 @@
     tbody {
       background: #1b1b28;
       color: #fff;
-      td{
-        span{
+      td {
+        span {
           opacity: 1 !important;
         }
       }
@@ -26,12 +26,29 @@
   background-color: variable.$whiteColor;
   transition: background-color 0.3s ease;
   border-radius: 5px;
-  .block_progress {
-    height: 0.5em;
-    width: 100%;
-    background-color: var(--block--progress--background);
-    transition: background-color 0.3s ease;
-    border-radius: 1em;
+  h4 {
+    color: var(--dark--text--color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  .date-time {
+    color: var(--dark--text--color);
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+  }
+  .progress {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    span {
+      color: var(--dark--text--color);
+      font-size: 0.875rem;
+      font-weight: 700 !important;
+      transition: color 0.3s ease;
+    }
   }
   .block_options {
     display: flex;
@@ -117,7 +134,7 @@
             background-color: #fafafa;
             padding: 0.2em 1.1em;
             border: 1px solid variable.$bs-gray-300;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
             strong {
               font-weight: 500;
               color: #181c32;
@@ -179,4 +196,3 @@
     padding-left: 3.75rem;
   }
 }
-
