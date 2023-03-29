@@ -4687,11 +4687,11 @@ textarea.form-control-lg {
 
 @keyframes progress-bar-stripes {
   0% {
-    background-position-x: 1rem;
+    background-position-x: 0.65em;
   }
 }
 .progress {
-  --bs-progress-height: 1rem;
+  --bs-progress-height: 0.65em;
   --bs-progress-font-size: 0.75rem;
   --bs-progress-bg: #e9ecef;
   --bs-progress-border-radius: 0.375rem;
@@ -12221,12 +12221,27 @@ footer .footer-menu li:hover {
   transition: background-color 0.3s ease;
   border-radius: 5px;
 }
-.block .block_progress {
-  height: 0.5em;
-  width: 100%;
-  background-color: var(--block--progress--background);
-  transition: background-color 0.3s ease;
-  border-radius: 1em;
+.block h4 {
+  color: var(--dark--text--color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+.block .date-time {
+  color: var(--dark--text--color);
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+.block .progress {
+  margin-bottom: 0.5rem;
+}
+.block p span {
+  color: var(--dark--text--color);
+  font-size: 0.875rem;
+  font-weight: 700 !important;
+  transition: color 0.3s ease;
 }
 .block .block_options {
   display: flex;
