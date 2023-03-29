@@ -12655,6 +12655,7 @@ footer .footer-menu li:hover {
 
 .log-in {
   font-size: 11px;
+  cursor: context-menu;
 }
 @media only screen and (min-height: 576px) {
   .log-in {
@@ -12791,6 +12792,7 @@ footer .footer-menu li:hover {
 
 .register {
   font-size: 10px;
+  cursor: context-menu;
 }
 @media only screen and (max-width: 376px) {
   .register {
