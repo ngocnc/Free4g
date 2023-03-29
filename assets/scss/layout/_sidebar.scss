@@ -203,6 +203,8 @@
             position: absolute;
             left:100%;
             top:0%;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
             .menu__column--item{
               &.heading__submenu{
                 span{
@@ -211,6 +213,7 @@
                   background:variable.$blueColor;
                   display: block;
                   text-transform: uppercase;
+                  border-top-right-radius: 8px;
                 }
               }
               .menu__item--title{

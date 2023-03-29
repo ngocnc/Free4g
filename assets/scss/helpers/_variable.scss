@@ -38,6 +38,7 @@ html {
   --heading--title: #F8F9FC;
   --heading--table: #{$whiteColor};
   --hover-data-table:#e6f7ff;
+  --hover-data-table-secondary:#e6f7ff;
 
   --heading-bottom--text--color: #{$bs-gray-500};
 
@@ -65,4 +66,6 @@ html {
   --input--background:rgb(36, 37, 37);
 
   --gray--lighter--text:#{$whiteColor};
+
+  --hover-data-table-secondary:#1b1b28;
 }
