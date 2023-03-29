@@ -12745,10 +12745,15 @@ footer .footer-menu li:hover {
 }
 .log-in_wrapper .log-in_content .log-in_box form .login-btn {
   margin-top: 2.5em;
-  padding: 0.6em 0;
+  padding: 0.7em 0;
   font-size: 1.15em;
   background-color: #009ef7;
   border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.log-in_wrapper .log-in_content .log-in_box form .login-btn:hover {
+  background-color: #0095e8;
 }
 .log-in_wrapper .log-in_content .log-in_box .log-in_box-contact {
   margin-top: 1em;
@@ -12859,12 +12864,6 @@ footer .footer-menu li:hover {
   padding: 0.2em 0.6em;
   background-color: #f5f8fa;
 }
-.register_wrapper .register_content .register_box form .form-email_input i {
-  font-size: 1.5em;
-  font-weight: 100;
-  color: #c5c6cc;
-  padding-right: 0.5em;
-}
 .register_wrapper .register_content .register_box form .form-password {
   margin-top: 2em;
 }
@@ -12884,6 +12883,12 @@ footer .footer-menu li:hover {
   margin-top: 0.3em;
   padding: 0.2em 0.6em;
   background-color: #f5f8fa;
+}
+.register_wrapper .register_content .register_box form .form-password_input i {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #c5c6cc;
+  padding-right: 0.5em;
 }
 .register_wrapper .register_content .register_box form .form-password_intensity {
   padding: 0.7em 0 0.8em;

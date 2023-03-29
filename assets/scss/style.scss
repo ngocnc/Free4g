@@ -34,5 +34,5 @@
 @use "./page/my-account";
 
 /* ================ Register ============== */
-@use "../scss/layout/register/log-in";
-@use "../scss/layout/register/register";
+@use "./page/log-in";
+@use "./page/register";
