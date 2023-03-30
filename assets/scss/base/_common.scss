@@ -234,6 +234,17 @@
   }
   &.large-toggle.show{
     min-width:500px;
+    @include media-breakpoint-down(md) {
+      min-width:400px;
+    }
+    @include media-breakpoint-down(sm) {
+      min-width: 350px;
+      left: 50%;
+      transform: translateX(-75%);
+      .notification-list{
+        max-height: 200px;
+      }
+    }
   }
   .seperator {
     display: block;
