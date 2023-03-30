@@ -115,6 +115,11 @@ $(document).ready(function () {
     ) {
       $(".sub__menu--toggle").removeClass("show");
     }
+    // if ($(e.target).next(".sub__menu--toggle").hasClass("show")) {
+    //   if ($(e.target).is(".toggle__menu i")) {
+    //     $(".sub__menu--toggle").removeClass("show");
+    //   }
+    // }
   });
 
   // Change darkmode
@@ -137,8 +142,17 @@ $(document).ready(function () {
   });
 
   $(".icon-toggle").on("click", function () {
-    $(".icon-toggle").parent().find(".sub__menu--toggle").removeClass("show");
-    $(this).parent().find(".sub__menu--toggle").addClass("show");
+    // $(".icon-toggle").parent().find(".sub__menu--toggle").removeClass("show");
+    // $(this).parent().find(".sub__menu--toggle").addClass("show");
+    // if($(this).parent().find(".sub__menu--toggle").hasClass("show")){
+    //   $(this).parent().find(".sub__menu--toggle.show").removeClass("show");
+    // }
+    if(!$(this).next().hasClass("show")){
+      $(this).next().addClass("show")
+      $(this).parent().siblings().find(".sub__menu--toggle").removeClass("show");
+    }else{
+      $(this).next().removeClass("show")
+    }
   });
 
   $(".page-table").each(function (index, item) {
