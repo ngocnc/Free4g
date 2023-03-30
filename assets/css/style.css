@@ -12162,6 +12162,17 @@ header .header-top-wrapper .header-top .page-notification .notification__item.un
   background: #009ef7;
   border-radius: 50%;
 }
+header .header-top-wrapper .header-top .dot_info {
+  position: relative;
+}
+header .header-top-wrapper .header-top .dot_info::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #50cd89;
+  border-radius: 50%;
+}
 header .header-top-wrapper .header-top .mobile-logo img {
   height: 30px;
 }
