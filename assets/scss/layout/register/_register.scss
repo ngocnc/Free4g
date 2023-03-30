@@ -1,5 +1,14 @@
 .register {
+  font-size: 10px;
+  @media only screen and (max-width: 376px) {
+    font-size: 8px;
+  }
+  @media only screen and (min-height: 576px) {
     height: 100vh;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 992px)and (min-height: 576px){
+    font-size: 14px;
+  }
     .register_wrapper{
         gap: 5em;
         .register_content {
@@ -11,6 +20,9 @@
           .register_box {
             padding: 4em 3.8em 6em 3.8em;
             width: 47em;
+            @media only screen and (max-width: 576px) {
+              width: 100%;
+            }
             .register_box-header {
               text-align: center;
               h3 {

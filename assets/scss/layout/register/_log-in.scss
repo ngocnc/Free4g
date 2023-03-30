@@ -1,13 +1,13 @@
 .log-in {
-  height: 100vh;
-  @media only screen and (max-width: 576px) {
-    font-size: 12px;
+  font-size: 11px;
+  @media only screen and (min-height: 576px) {
+    height: 100vh;
   }
-  // @media only screen and (min-width: 576px) and (max-width: 1200px) {
-  //   height: 250vh;
-  // }
+  @media only screen and (min-width: 576px) and (max-width: 992px)and (min-height: 576px){
+    font-size: 16px;
+  }
   .log-in_wrapper {
-    gap: 10em;
+    gap: 6em;
     .log-in_content {
       gap: 3em;
       .log-in_logo {

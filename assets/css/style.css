@@ -12654,15 +12654,20 @@ footer .footer-menu li:hover {
 }
 
 .log-in {
-  height: 100vh;
+  font-size: 11px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (min-height: 576px) {
   .log-in {
-    font-size: 12px;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) and (min-height: 576px) {
+  .log-in {
+    font-size: 16px;
   }
 }
 .log-in .log-in_wrapper {
-  gap: 10em;
+  gap: 6em;
 }
 .log-in .log-in_wrapper .log-in_content {
   gap: 3em;
@@ -12775,7 +12780,22 @@ footer .footer-menu li:hover {
 }
 
 .register {
-  height: 100vh;
+  font-size: 10px;
+}
+@media only screen and (max-width: 376px) {
+  .register {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-height: 576px) {
+  .register {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) and (min-height: 576px) {
+  .register {
+    font-size: 14px;
+  }
 }
 .register .register_wrapper {
   gap: 5em;
@@ -12790,6 +12810,11 @@ footer .footer-menu li:hover {
 .register .register_wrapper .register_content .register_box {
   padding: 4em 3.8em 6em 3.8em;
   width: 47em;
+}
+@media only screen and (max-width: 576px) {
+  .register .register_wrapper .register_content .register_box {
+    width: 100%;
+  }
 }
 .register .register_wrapper .register_content .register_box .register_box-header {
   text-align: center;
