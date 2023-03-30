@@ -75,18 +75,29 @@ header {
               background-color: var(--hover-data-table-secondary);
             }
           }
-        &.unread__notification{
-          &::after{
-            content: "";
-            position: absolute;
-            top: 10%;
-            right: 3%;
-            width:5px;
-            height:5px;
-            background: variable.$blueColor;
-            border-radius:50%;
+          &.unread__notification {
+            &::after {
+              content: "";
+              position: absolute;
+              top: 10%;
+              right: 3%;
+              width: 5px;
+              height: 5px;
+              background: variable.$blueColor;
+              border-radius: 50%;
+            }
           }
         }
+      }
+      .dot_info {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 8px;
+          height: 8px;
+          background-color: #50cd89;
+          border-radius: 50%;
         }
       }
       .mobile-logo {
