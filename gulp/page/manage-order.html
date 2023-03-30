@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+        <link
+          href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
+          rel="stylesheet"
+          type="text/css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+      </head>
+<body>
+    <div class="page home__page" data-changing="false">
+        @@include('../layout/sidebar.html')
+  
+        <div class="page__content">
+          @@include('../layout/header.html')
+          <div class="page__content--inner">
+            <div class="container">
+              <div class="header-bottom-wrapper">
+                <div class="header-bottom">
+                  <div class="header-bottom_options active">Đơn hàng của tôi</div>
+                  <span></span>
+                  <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
+                  <i> - </i>
+                  <div class="header-bottom_options">
+                    Đơn hàng của tôi
+                </div>
+                </div>
+              </div>
+              <div class="card">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <h3>Đơn hàng của tôi</h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                   
+                    <div class="data__table--wrapper">
+                        <table style="width:100%" class="table responsive dt-responsive nowrap dataTable no-footer no-search">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#Mã đơn hàng</th>
+                                    <th scope="col">Chu kỳ</th>
+                                    <th scope="col">Tổng tiền đơn hàng</th>
+                                    <th scope="col">Trạng thái đơn hàng</th>
+                                    <th scope="col">Thời gian khởi tạo</th>
+                                    <th scope="col">Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th>2023032719034127867</th>
+                                    <th>1 tháng</th>
+                                    <th>6.000đ</th>
+                                    <th><a href="">Đã hủy</a></th>
+                                    <th class="time">17:18:41 20/03/2023</th>
+                                    <th>
+                                      <a href="#" class="cancal">Huỷ</a>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>2023032719034127867</th>
+                                      <th>1 tháng</th>
+                                      <th>6.000đ</th>
+                                      <th><a href="">Đã hủy</a></th>
+                                      <th class="time">19:44 27/03/2023</th>
+                                      <th>
+                                        <a href="#" class="cancal">Huỷ</a>
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                    <th>202303192303468522</th>
+                                      <th>1 tháng</th>
+                                      <th>6.000đ</th>
+                                      <th><a href="">Đã hủy</a></th>
+                                      <th class="time"> 19/03/2023</th>
+                                      <th>
+                                        <a href="#" class="cancal">Huỷ</a>
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                    <th>2023031719030093901</th>
+                                      <th>1 tháng</th>
+                                      <th>6.000đ</th>
+                                      <th><a href="">Đã hủy</a></th>
+                                      <th class="time"> 17/03/2023</th>
+                                      <th>
+                                        <a href="#" class="cancal">Huỷ</a>
+                                      </th>
+                                  </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          @@include('../layout/footer.html')
+          @@include('../layout/message-homepage.html')
+        </div>
+      </div>
+      <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/js/boostrap.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@use "../helpers/variable";
+.user-name {
+  background-color: var(--white--color);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(219, 226, 239, 0.5),
+    0 1px 2px rgba(219, 226, 239, 0.5);
+  transition: background 0.3s ease;
+  &-title {
+    padding: 1.5rem 0 1.5rem;
+    h5 {
+      margin-bottom: 10px;
+      color: var(--dark--text--color);
+      transition: color 0.3s ease;
+    }
+    p {
+      font-size: 14px;
+      color: variable.$grayColor;
+    }
+    .user-name-check {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      input {
+        height: 25px;
+        width: 25px;
+      }
+    }
+    .user-name-info {
+      font-size: 14px;
+      color: variable.$grayColor;
+      .user-name-link {
+        color: variable.$bs-active-primary;
+      }
+    }
+  }
+}
