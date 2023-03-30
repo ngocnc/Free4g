@@ -12668,6 +12668,339 @@ footer .footer-menu li:hover {
   border-bottom: 1px solid var(--border-header-color);
 }
 
+.log-in {
+  font-size: 11px;
+  cursor: context-menu;
+}
+@media only screen and (min-height: 576px) {
+  .log-in {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) and (min-height: 576px) {
+  .log-in {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .log-in {
+    font-size: 13px;
+  }
+}
+.log-in_wrapper {
+  gap: 6em;
+}
+.log-in_wrapper .log-in_content {
+  gap: 3em;
+}
+.log-in_wrapper .log-in_content .log-in_logo {
+  margin-top: 3em;
+  width: 5em;
+}
+.log-in_wrapper .log-in_content .log-in_box {
+  padding: 4em 3.8em 6em 3.8em;
+  width: 40em;
+}
+@media only screen and (max-width: 576px) {
+  .log-in_wrapper .log-in_content .log-in_box {
+    width: 100%;
+  }
+}
+.log-in_wrapper .log-in_content .log-in_box-header h3 {
+  font-size: 1.9em;
+  font-weight: 600;
+}
+.log-in_wrapper .log-in_content .log-in_box-header p {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #b7c5de;
+  margin-top: 0.7em;
+}
+.log-in_wrapper .log-in_content .log-in_box-header p a {
+  color: #00adf9;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: all 0.8s ease;
+}
+.log-in_wrapper .log-in_content .log-in_box-header p a:hover {
+  color: #75d0fd;
+}
+.log-in_wrapper .log-in_content .log-in_box form {
+  padding: 2em 0 2.5em;
+  border-bottom: 1px solid #c5c6cc;
+}
+.log-in_wrapper .log-in_content .log-in_box form .form-email_text {
+  color: #181c32;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.log-in_wrapper .log-in_content .log-in_box form .form-email_input {
+  margin-top: 0.3em;
+  padding: 0.2em 0.6em;
+  background-color: #f5f8fa;
+}
+.log-in_wrapper .log-in_content .log-in_box form .form-password {
+  margin-top: 2.5em;
+}
+.log-in_wrapper .log-in_content .log-in_box form .form-password_text {
+  color: #181c32;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.log-in_wrapper .log-in_content .log-in_box form .form-password_text a {
+  color: #00adf9;
+  transition: all 0.8s ease;
+}
+.log-in_wrapper .log-in_content .log-in_box form .form-password_text a:hover {
+  color: #75d0fd;
+}
+.log-in_wrapper .log-in_content .log-in_box form .form-password_input {
+  margin-top: 0.3em;
+  padding: 0.2em 0.6em;
+  background-color: #f5f8fa;
+}
+.log-in_wrapper .log-in_content .log-in_box form .login-btn {
+  margin-top: 2.5em;
+  padding: 0.7em 0;
+  font-size: 1.15em;
+  background-color: #009ef7;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.log-in_wrapper .log-in_content .log-in_box form .login-btn:hover {
+  background-color: #0095e8;
+}
+.log-in_wrapper .log-in_content .log-in_box .log-in_box-contact {
+  margin-top: 1em;
+}
+.log-in_wrapper .log-in_content .log-in_box .log-in_box-contact h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.log-in_wrapper .log-in_content .log-in_box .log-in_box-contact_social {
+  margin-top: 1.4em;
+  gap: 3em;
+  height: 2.5em;
+}
+.log-in_wrapper .log-in_content .log-in_box .log-in_box-contact_social a {
+  display: block;
+  width: 2.5em;
+  height: 100%;
+}
+.log-in_wrapper .log-in_content .log-in_box .log-in_box-contact_social a img {
+  width: 100%;
+  height: 100%;
+}
+.log-in_wrapper .log-in_about {
+  gap: 1em;
+}
+.log-in_wrapper .log-in_about a {
+  color: #c5c6cc;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.log-in_wrapper .log-in_about a:hover {
+  color: #009ef7;
+}
+
+.register {
+  font-size: 10px;
+  cursor: context-menu;
+}
+@media only screen and (max-width: 376px) {
+  .register {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-height: 576px) {
+  .register {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) and (min-height: 576px) {
+  .register {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .register {
+    font-size: 13px;
+  }
+}
+.register_wrapper {
+  gap: 5em;
+}
+.register_wrapper .register_content {
+  gap: 2.5em;
+}
+.register_wrapper .register_content .register_logo {
+  margin-top: 6em;
+  width: 5em;
+}
+.register_wrapper .register_content .register_box {
+  padding: 4em 3.8em 6em 3.8em;
+  width: 47em;
+}
+@media only screen and (max-width: 576px) {
+  .register_wrapper .register_content .register_box {
+    width: 100%;
+  }
+}
+.register_wrapper .register_content .register_box-header h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+.register_wrapper .register_content .register_box-header p {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #b7c5de;
+  margin-top: 0.7em;
+}
+.register_wrapper .register_content .register_box-header p a {
+  color: #00adf9;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: all 0.8s ease;
+}
+.register_wrapper .register_content .register_box-header p a:hover {
+  color: #75d0fd;
+}
+.register_wrapper .register_content .register_box form {
+  padding: 2.5em 0 1em;
+  border-bottom: 1px solid #c5c6cc;
+}
+.register_wrapper .register_content .register_box form .form-email_text {
+  color: #181c32;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.register_wrapper .register_content .register_box form .form-email_input {
+  margin-top: 0.3em;
+  padding: 0.2em 0.6em;
+  background-color: #f5f8fa;
+}
+.register_wrapper .register_content .register_box form .form-password {
+  margin-top: 2em;
+}
+.register_wrapper .register_content .register_box form .form-password_text {
+  color: #181c32;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.register_wrapper .register_content .register_box form .form-password_text a {
+  color: #00adf9;
+  transition: all 0.8s ease;
+}
+.register_wrapper .register_content .register_box form .form-password_text a:hover {
+  color: #75d0fd;
+}
+.register_wrapper .register_content .register_box form .form-password_input {
+  margin-top: 0.3em;
+  padding: 0.2em 0.6em;
+  background-color: #f5f8fa;
+}
+.register_wrapper .register_content .register_box form .form-password_input i {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #c5c6cc;
+  padding-right: 0.5em;
+}
+.register_wrapper .register_content .register_box form .form-password_intensity {
+  padding: 0.7em 0 0.8em;
+  gap: 0.6em;
+}
+.register_wrapper .register_content .register_box form .form-password_intensity-box {
+  height: 0.4em;
+  background-color: #e4e6ef;
+}
+.register_wrapper .register_content .register_box form .form-password_intensity-box.active {
+  background-color: #50cd89;
+}
+.register_wrapper .register_content .register_box form .form-password_notice {
+  color: #a1a5b7;
+  font-size: 1.05em;
+}
+.register_wrapper .register_content .register_box form .form-password-repeat {
+  margin-top: 2em;
+}
+.register_wrapper .register_content .register_box form .form-password-repeat_text {
+  color: #181c32;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.register_wrapper .register_content .register_box form .form-password-repeat .form-password-repeat_input {
+  margin-top: 0.3em;
+  padding: 0.2em 0.6em;
+  background-color: #f5f8fa;
+}
+.register_wrapper .register_content .register_box form .form-password_agree {
+  gap: 0.5em;
+  margin-top: 1em;
+}
+.register_wrapper .register_content .register_box form .form-password_agree input[type=checkbox] {
+  width: 1.6em;
+  height: 1.6em;
+}
+.register_wrapper .register_content .register_box form .form-password_agree span {
+  margin-top: 0.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #636278;
+}
+.register_wrapper .register_content .register_box form .form-password_agree span a {
+  color: #009ef7;
+}
+.register_wrapper .register_content .register_box form .form-password_agree span a:hover {
+  color: #47b8fa;
+}
+.register_wrapper .register_content .register_box form .register-btn {
+  margin-top: 2.5em;
+  padding: 0.8em 1.6em;
+  font-size: 1.15em;
+  font-weight: 500;
+  background-color: #009ef7;
+  border: none;
+  transition: all 0.2s ease;
+}
+.register_wrapper .register_content .register_box form .register-btn:hover {
+  background-color: #0394e9;
+}
+.register_wrapper .register_content .register_box .register_box-contact {
+  margin-top: 1em;
+}
+.register_wrapper .register_content .register_box .register_box-contact h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.register_wrapper .register_content .register_box .register_box-contact_social {
+  margin-top: 1.4em;
+  gap: 2.5em;
+  height: 2.5em;
+}
+.register_wrapper .register_content .register_box .register_box-contact_social a {
+  display: block;
+  width: 3em;
+  height: 100%;
+}
+.register_wrapper .register_content .register_box .register_box-contact_social a img {
+  width: 100%;
+  height: 100%;
+}
+.register_wrapper .register_about {
+  gap: 1em;
+  padding-bottom: 2em;
+}
+.register_wrapper .register_about a {
+  color: #c5c6cc;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.register_wrapper .register_about a:hover {
+  color: #009ef7;
+
 .header-bottom-numbers {
   color: var(--dark--text--color);
   transition: color 0.3s ease;
@@ -12762,6 +13095,7 @@ footer .footer-menu li:hover {
   font-family: menlo;
   flex: 2 1;
   transition: color 0.3s ease;
+
 }
 
 /*******************************
@@ -12781,5 +13115,6 @@ footer .footer-menu li:hover {
 /* ================ Common Element ============== */
 /* ================ Layout ============== */
 /* ================ Page ============== */
+/* ================ Register ============== */
 
 /*# sourceMappingURL=style.css.map */
