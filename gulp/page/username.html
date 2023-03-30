@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page home__page" data-changing="false">
+      @@include('../layout/sidebar.html')
+
+      <div class="page__content">
+        @@include('../layout/header.html')
+        <div class="page__content--inner">
+          <div class="container">
+            <div class="header-bottom-wrapper">
+              <div class="header-bottom">
+                <div class="header-bottom_options active">Username</div>
+                <span></span>
+                <div class="header-bottom_options">Đăng nhập Telegram</div>
+              </div>
+            </div>
+
+            <section class="row">
+              <div class="col-12">
+                <div class="user-name">
+                  <div class="user-name-border">
+                    <div class="user-name-title">
+                      <h5>Username tài khoản Telegram</h5>
+                      <input type="text" />
+                      <p>
+                        Lưu ý:Username tài khoản telegram chứ không phải SĐT và
+                        không có @.
+                      </p>
+                    </div>
+                    <div class="user-name-title">
+                      <h5>ID</h5>
+                      <input type="number" />
+                      <div class="user-name-check">
+                        <input type="checkbox" />
+                        <p>Bật xác thực OTP khi đăng nhập</p>
+                      </div>
+                      <div class="user-name-info">
+                        *Sau khi thiết lập tk Telegram vui lòng nhắn 1 tin với
+                        bot bằng cách nhấn vào
+                        <a href="#" class="user-name-link">link này</a> hoặc tìm
+                        bot @momoapisv3_bot
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        @@include('../layout/footer.html')
+        @@include('../layout/message-homepage.html')
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/boostrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

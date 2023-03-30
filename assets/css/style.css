@@ -13098,6 +13098,41 @@ footer .footer-menu li:hover {
 
 }
 
+.user-name {
+  background-color: var(--white--color);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(219, 226, 239, 0.5), 0 1px 2px rgba(219, 226, 239, 0.5);
+  transition: background 0.3s ease;
+}
+.user-name-title {
+  padding: 1.5rem 0 1.5rem;
+}
+.user-name-title h5 {
+  margin-bottom: 10px;
+  color: var(--dark--text--color);
+  transition: color 0.3s ease;
+}
+.user-name-title p {
+  font-size: 14px;
+  color: #494b74;
+}
+.user-name-title .user-name-check {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.user-name-title .user-name-check input {
+  height: 25px;
+  width: 25px;
+}
+.user-name-title .user-name-info {
+  font-size: 14px;
+  color: #494b74;
+}
+.user-name-title .user-name-info .user-name-link {
+  color: #0095e8;
+}
+
 /*******************************
         TABLE OF CONTENT
 ********************************
