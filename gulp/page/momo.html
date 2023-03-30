@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+    <link
+      href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="page home__page" data-changing="false">
+      @@include('../layout/sidebar.html')
+
+      <div class="page__content">
+        @@include('../layout/header.html')
+        <div class="page__content--inner">
+          <div class="container">
+            <div class="header-bottom-wrapper">
+              <div class="header-bottom">
+                <div class="header-bottom_options active">Nạp tiền</div>
+                <span></span>
+                <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
+                <i> - </i>
+                <div class="header-bottom_options">Ngân hàng</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <h3>Nạp tiền qua momo</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>* Nạp ATM/Momo <br> Ví Dụ: <br> 100k ATM/Momo = 100k Trên Shop</p>
+                <p>THÔNG TIN TÀI KHOẢN momo
+                  <br> ✔ :  momo
+                  <br> Chủ tài khoản: HO VIET Hung
+                  <br>STK/SDT: 0913123412341
+                  <br>Chuyển khoản đúng nội dung, hệ thống sẽ tự động cộng tiền
+                </p>
+              </div>
+              <div class="card-footer">
+                <p>Nội dung chuyển khoản của bạn:</p>
+                <div class="d-flex align-items-center justify-content-center">
+                    <input value="naptien1429" readonly class="copy-border"></input>
+                    <button class="btn page-btn copy-button">Sao chép</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @@include('../layout/footer.html')
+        @@include('../layout/message-homepage.html')
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/js/boostrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

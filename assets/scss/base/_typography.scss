@@ -24,6 +24,8 @@ a {
 // }
 
 p{
+    color:var(--dark--text--color);
+    transition: color 0.3s ease;
     margin-bottom:0;
 }
 p+p{

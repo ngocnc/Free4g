@@ -11,8 +11,8 @@ header {
     right: 0;
     left: 0;
     width: 100%;
-    background:var(--white--color);
-    transition: all .3s ease;
+    background: var(--white--color);
+    transition: all 0.3s ease;
     .header-top {
       display: flex;
       align-items: center;
@@ -24,22 +24,69 @@ header {
           width: 30px;
         }
       }
-      .changing-mode{
-        i{
+      .changing-mode {
+        margin-left: 20px;
+        i {
           font-size: 20px;
-          vertical-align:-webkit-baseline-middle;
-          transition: all .3s ease;
-          color:var(--dark--text--color);
+          vertical-align: -webkit-baseline-middle;
+          transition: all 0.3s ease;
+          color: var(--dark--text--color);
         }
       }
       .avatar {
-        margin-left:20px;
+        margin-left: 20px;
         position: relative;
-        i{
+        i {
           font-size: 20px;
-          vertical-align:-webkit-baseline-middle;
-          transition: all .3s ease;
-          color:var(--dark--text--color);
+          vertical-align: -webkit-baseline-middle;
+          transition: all 0.3s ease;
+          color: var(--dark--text--color);
+        }
+      }
+      .page-notification {
+        position: relative;
+        color: var(--dark--text--color);
+        i {
+          font-size: 20px;
+          vertical-align: -webkit-baseline-middle;
+          transition: all 0.3s ease;
+          color: var(--dark--text--color);
+        }
+        .notification__item {
+          position: relative;
+          a {
+            display: block;
+            position: relative;
+            padding: 1rem 2rem;
+            color: var(--dark--text--color);
+            .notification__header--wrapper {
+              margin-bottom: 10px;
+              .notification__header {
+                font-weight: 700;
+                font-size: 16px;
+              }
+            }
+            .notification__content {
+              line-height: 1.9;
+            }
+          }
+          &:hover {
+            a {
+              background-color: var(--hover-data-table-secondary);
+            }
+          }
+        &.unread__notification{
+          &::after{
+            content: "";
+            position: absolute;
+            top: 10%;
+            right: 3%;
+            width:5px;
+            height:5px;
+            background: variable.$blueColor;
+            border-radius:50%;
+          }
+        }
         }
       }
       .mobile-logo {
@@ -55,17 +102,17 @@ header {
   display: flex;
   align-items: center;
   padding: 1em 1.8em;
-  a{
+  a {
     // margin-right:10px;
-    color:var(--heading-bottom--text--color);
-    &:hover{
-      color:variable.$blueColor;
+    color: var(--heading-bottom--text--color);
+    &:hover {
+      color: variable.$blueColor;
     }
   }
-  i{
-    color:var(--dark--text--color);
+  i {
+    color: var(--dark--text--color);
     transition: color 0.3s ease;
-    margin:0  10px;
+    margin: 0 10px;
   }
   &_options {
     font-size: 0.95em;
@@ -75,7 +122,7 @@ header {
     &.active {
       font-size: 1.35rem;
       color: var(--dark--text--color);
-      transition: color .3s ease;
+      transition: color 0.3s ease;
       font-weight: 600;
     }
   }

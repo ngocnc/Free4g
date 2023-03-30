@@ -68,23 +68,58 @@ $(document).ready(function () {
   });
 
   // Item has submenu in sidebar click
-  $(".menu__column .menu__column--item.has-submenu > .menu__column--link").click(function(){
-    $(this).next(".sub__menu").slideToggle().parent().toggleClass("active").siblings().removeClass("active").find(".sub__menu").slideUp();
-  })
+  $(
+    ".menu__column .menu__column--item.has-submenu > .menu__column--link"
+  ).click(function (e) {
+    e.preventDefault();
+    $(this)
+      .next(".sub__menu")
+      .slideToggle()
+      .parent()
+      .toggleClass("active")
+      .siblings()
+      .removeClass("active")
+      .find(".sub__menu")
+      .slideUp();
+  });
+
+  $(".notification__content p").each(function (index, item) {
+    let text = $(item).text();
+    let len = text.length;
+    let limitedText = 200;
+
+    if (len > limitedText) {
+      $(item).text(
+        $(item)
+          .text()
+          .substr(0, limitedText - 1) + "...  "
+      );
+    }
+  });
 
   // Click outside to turn off which submenu open
   $(window).on("click", function (e) {
     if (
-      $(e.target).closest(".page__sidebar .menu__column--link").length === 0
-      &&
-      $(e.target).closest(".page-icon").length === 0
-      &&
-      $(e.target).closest(".page__sidebar").length === 0
-      &&
+      $(e.target).closest(".page__sidebar .menu__column--link").length === 0 &&
+      $(e.target).closest(".page-icon").length === 0 &&
+      $(e.target).closest(".page__sidebar").length === 0 &&
       $(e.target).closest("[data-changing=false]").length === 0
-    ){
+    ) {
       $(".sub__menu").slideUp().parent().removeClass("active");
     }
+
+    if (
+      !$(e.target).is(".sub__menu--toggle.show *") &&
+      !$(e.target).is(".toggle__menu i") &&
+      !$(e.target).is(".changing-mode i")
+    ) {
+      $(".sub__menu--toggle").removeClass("show");
+    }
+    // if ($(e.target).next(".sub__menu--toggle").hasClass("show")) {
+    //   if ($(e.target).is(".toggle__menu i")) {
+    //     $(".sub__menu--toggle").removeClass("show");
+    //   }
+    // }
   });
 
   // Change darkmode
@@ -106,10 +141,18 @@ $(document).ready(function () {
     }
   });
 
-  $(".icon-toggle").each(function (index, item) {
-    $(item).on("click", function () {
-      $(this).parent().find(".sub__menu--toggle").addClass("show");
-    });
+  $(".icon-toggle").on("click", function () {
+    // $(".icon-toggle").parent().find(".sub__menu--toggle").removeClass("show");
+    // $(this).parent().find(".sub__menu--toggle").addClass("show");
+    // if($(this).parent().find(".sub__menu--toggle").hasClass("show")){
+    //   $(this).parent().find(".sub__menu--toggle.show").removeClass("show");
+    // }
+    if(!$(this).next().hasClass("show")){
+      $(this).next().addClass("show")
+      $(this).parent().siblings().find(".sub__menu--toggle").removeClass("show");
+    }else{
+      $(this).next().removeClass("show")
+    }
   });
 
   $(".page-table").each(function (index, item) {
