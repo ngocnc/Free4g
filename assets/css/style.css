@@ -12296,13 +12296,17 @@ footer .footer-menu li:hover {
 }
 .notification-list::-webkit-scrollbar {
   width: 3px;
+  -webkit-width: 3px;
 }
 .notification-list::-webkit-scrollbar-thumb {
   background: #50cd89;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -webkit-background: #50cd89;
 }
 .notification-list::-webkit-scrollbar-track {
   background: transparent;
+  -webkit-background: transparent;
 }
 .notification-item {
   padding: 1rem 2.25rem;
@@ -12386,6 +12390,11 @@ footer .footer-menu li:hover {
   transition: background-color 0.3s ease;
   border-radius: 5px;
 }
+@media (max-width: 767.98px) {
+  .block {
+    padding: 2.3em 0.5rem;
+  }
+}
 .block h4 {
   color: var(--dark--text--color);
   font-size: 1.25rem;
@@ -12421,6 +12430,11 @@ footer .footer-menu li:hover {
   justify-content: center;
   border-radius: 20px;
   padding: 0.7em 0.8em;
+}
+@media (max-width: 767.98px) {
+  .block .block_options .block_options-detail {
+    font-size: 0.8em;
+  }
 }
 .block .block_options .block_options-detail.color-text-white {
   color: #fff;
