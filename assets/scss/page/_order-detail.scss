@@ -5,28 +5,36 @@
 
 .accomplished {
   &-block {
-    background-color: var(--white--color);
+    background: var(--heading--table);
     padding: 1rem 1rem;
     border-radius: 0.25rem;
-    box-shadow: 0 1px 3px rgba(219, 226, 239, 0.5),
-      0 1px 2px rgba(219, 226, 239, 0.5);
     margin-bottom: 1.75rem;
     transition: background 0.3s ease;
     @media (max-width: 768px) {
       margin-bottom: 0.875rem;
     }
-    .accomplished-succes {
+    .accomplished-icon {
       width: 72px;
       height: 72px;
-      background-color: #52c41a;
-      border-radius: 50%;
       text-align: center;
       margin: 0 auto;
       margin-bottom: 24px;
       i {
         font-size: 42px;
         line-height: 72px;
-        color: #fff;
+      }
+      &.accomplished-succes {
+        background-color: #52c41a;
+        border-radius: 50%;
+        i {
+          color: #fff;
+        }
+      }
+      &.accomplished-warning {
+        margin-bottom: 0;
+        i {
+          color: #faad14;
+        }
       }
     }
     .accomplished-title {
@@ -45,17 +53,15 @@
     }
   }
   .accomplished-information {
-    background-color: var(--white--color);
+    background: var(--heading--table);
     border-radius: 0.25rem;
-    box-shadow: 0 1px 3px rgba(219, 226, 239, 0.5),
-      0 1px 2px rgba(219, 226, 239, 0.5);
     margin-bottom: 1.75rem;
     @media (max-width: 768px) {
       margin-bottom: 0.875rem;
     }
     transition: background 0.3s ease;
     .accomplished-header {
-      background-color: var(--white--color);
+      background: var(--heading--table);
       padding: 0.75rem 1.25rem;
       transition: background 0.3s ease;
       h3 {

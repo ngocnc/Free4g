@@ -13188,10 +13188,9 @@ footer .footer-menu li:hover {
 }
 
 .accomplished-block {
-  background-color: var(--white--color);
+  background: var(--heading--table);
   padding: 1rem 1rem;
   border-radius: 0.25rem;
-  box-shadow: 0 1px 3px rgba(219, 226, 239, 0.5), 0 1px 2px rgba(219, 226, 239, 0.5);
   margin-bottom: 1.75rem;
   transition: background 0.3s ease;
 }
@@ -13200,19 +13199,29 @@ footer .footer-menu li:hover {
     margin-bottom: 0.875rem;
   }
 }
-.accomplished-block .accomplished-succes {
+.accomplished-block .accomplished-icon {
   width: 72px;
   height: 72px;
-  background-color: #52c41a;
-  border-radius: 50%;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 24px;
 }
-.accomplished-block .accomplished-succes i {
+.accomplished-block .accomplished-icon i {
   font-size: 42px;
   line-height: 72px;
+}
+.accomplished-block .accomplished-icon.accomplished-succes {
+  background-color: #52c41a;
+  border-radius: 50%;
+}
+.accomplished-block .accomplished-icon.accomplished-succes i {
   color: #fff;
+}
+.accomplished-block .accomplished-icon.accomplished-warning {
+  margin-bottom: 0;
+}
+.accomplished-block .accomplished-icon.accomplished-warning i {
+  color: #faad14;
 }
 .accomplished-block .accomplished-title {
   color: var(--dark--text--color);
@@ -13229,9 +13238,8 @@ footer .footer-menu li:hover {
   transition: color 0.3s ease;
 }
 .accomplished .accomplished-information {
-  background-color: var(--white--color);
+  background: var(--heading--table);
   border-radius: 0.25rem;
-  box-shadow: 0 1px 3px rgba(219, 226, 239, 0.5), 0 1px 2px rgba(219, 226, 239, 0.5);
   margin-bottom: 1.75rem;
   transition: background 0.3s ease;
 }
@@ -13241,7 +13249,7 @@ footer .footer-menu li:hover {
   }
 }
 .accomplished .accomplished-information .accomplished-header {
-  background-color: var(--white--color);
+  background: var(--heading--table);
   padding: 0.75rem 1.25rem;
   transition: background 0.3s ease;
 }
