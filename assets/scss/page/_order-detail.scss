@@ -1,3 +1,5 @@
+@use "../helpers/variable";
+
 .header-bottom-numbers {
   color: var(--dark--text--color);
   transition: color 0.3s ease;
@@ -72,6 +74,9 @@
         font-weight: 400;
         line-height: 1.75;
         transition: color 0.3s ease;
+      }
+      .payment-options {
+        background: variable.$bs-active-danger-bland;
       }
     }
     .accomplished-content {

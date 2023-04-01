@@ -13262,6 +13262,9 @@ footer .footer-menu li:hover {
   line-height: 1.75;
   transition: color 0.3s ease;
 }
+.accomplished .accomplished-information .accomplished-header .payment-options {
+  background: #f1416c;
+}
 .accomplished .accomplished-information .accomplished-content {
   padding: 1.25rem 1.25rem 1px;
 }
@@ -13342,6 +13345,108 @@ footer .footer-menu li:hover {
 .user-name-submit button:hover {
   background-color: var(--white--color);
   color: var(--dark--text--color);
+}
+
+.payment-block {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-block .payment-options {
+  border-radius: 2rem;
+  padding: 0.55rem 1.25rem;
+}
+.payment-block .payment-options button {
+  background: none;
+  font-size: 0.925rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.payment-bank .payment-bank-block {
+  padding: 1.75rem;
+  margin-bottom: 1.25rem;
+  display: flex !important;
+  border: 1px dashed #e4e6ef;
+  border-radius: 0.475rem;
+}
+.payment-bank .payment-bank-block:hover {
+  background-color: #f1faff;
+  border: 1px dashed #009ef7;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+.payment-bank .payment-bank-block:hover .payment-bank-content .text-dark {
+  color: #181c32 !important;
+  font-weight: 600;
+  font-size: 1.35rem;
+  transition: color 0.3s ease;
+}
+.payment-bank .payment-bank-block .payment-bank-img {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+}
+.payment-bank .payment-bank-block .payment-bank-img .logo-mb {
+  margin-right: 13px;
+  width: 60px !important;
+}
+.payment-bank .payment-bank-block .payment-bank-img .logo-momo {
+  width: 50px;
+  margin-right: 13px;
+}
+.payment-bank .payment-bank-block .payment-bank-content .text-dark {
+  color: var(--dark--text--color) !important;
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+.payment-bank .payment-bank-block .payment-bank-content .text-muted {
+  color: #a1a5b7;
+  font-weight: 500;
+  font-size: 1.075rem;
+}
+.payment-bank .btn-check {
+  position: absolute;
+}
+
+.payment {
+  background: rgb(53, 56, 61);
+  border-radius: 0.625rem;
+  padding: 2.25rem;
+}
+.payment h6 {
+  color: #7e8299;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.payment h6:hover {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  color: #009ef7;
+}
+.payment .payment-title,
+.payment .payment-total {
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+}
+.payment .payment-title .payment-text,
+.payment .payment-total .payment-text {
+  color: #f5f8fa;
+}
+.payment .payment-title .text-right,
+.payment .payment-total .text-right {
+  text-align: right !important;
+}
+.payment .payment-title {
+  border-bottom: 1px solid rgb(100, 102, 105);
+}
+.payment button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.475rem;
+  font-size: 1.1rem;
+  background-color: #009ef7;
+  color: #fff;
+}
+.payment button:hover {
+  background: #3699ff;
 }
 
 /*******************************

@@ -1,0 +1,107 @@
+@use "../helpers/variable";
+
+.payment-block {
+  display: flex;
+  justify-content: space-between;
+  .payment-options {
+    border-radius: 2rem;
+    padding: 0.55rem 1.25rem;
+    button {
+      background: none;
+      font-size: 0.925rem;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+}
+
+.payment-bank {
+  .payment-bank-block {
+    padding: 1.75rem;
+    margin-bottom: 1.25rem;
+    display: flex !important;
+    border: 1px dashed variable.$bs-gray-300;
+    border-radius: 0.475rem;
+    &:hover {
+      background-color: #f1faff;
+      border: 1px dashed variable.$bs-active-primary-bland;
+      transition: background 0.3s ease, border 0.3s ease;
+      .payment-bank-content {
+        .text-dark {
+          color: variable.$bs-gray-900 !important;
+          font-weight: 600;
+          font-size: 1.35rem;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+    .payment-bank-img {
+      display: flex;
+      align-items: center;
+      margin-right: 13px;
+      .logo-mb {
+        margin-right: 13px;
+        width: 60px !important;
+      }
+      .logo-momo {
+        width: 50px;
+        margin-right: 13px;
+      }
+    }
+    .payment-bank-content {
+      .text-dark {
+        color: var(--dark--text--color) !important;
+        font-weight: 600;
+        font-size: 1.35rem;
+      }
+      .text-muted {
+        color: variable.$bs-gray-500;
+        font-weight: 500;
+        font-size: 1.075rem;
+      }
+    }
+  }
+  .btn-check {
+    position: absolute;
+  }
+}
+
+.payment {
+  background: rgb(53, 56, 61);
+  border-radius: 0.625rem;
+  padding: 2.25rem;
+  h6 {
+    color: variable.$bs-gray-600;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    &:hover {
+      transition: color 0.2s ease, background-color 0.2s ease;
+      color: variable.$bs-active-primary-bland;
+    }
+  }
+  .payment-title,
+  .payment-total {
+    padding-bottom: 0.75rem;
+    margin-bottom: 2rem;
+    .payment-text {
+      color: variable.$bs-gray-100;
+    }
+    .text-right {
+      text-align: right !important;
+    }
+  }
+  .payment-title {
+    border-bottom: 1px solid rgb(100, 102, 105);
+  }
+  button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.475rem;
+    font-size: 1.1rem;
+    background-color: variable.$bs-active-primary-bland;
+    color: #fff;
+    &:hover {
+      background: #3699ff;
+    }
+  }
+}
