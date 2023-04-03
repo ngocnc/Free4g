@@ -1,7 +1,4 @@
 .detail-service{
-    cursor: context-menu;
-    background-color: var(--background--content);
-    padding: 5em 0 5.5em;
     @media only screen and (max-width: 576px){
         font-size: 11px;
       }
@@ -10,11 +7,12 @@
       }
     &_wrapper{
         background-color: var(--heading--table);
+        transition: background-color 0.3s ease;
         padding: 3em;
-        border: 1px dashed var(--heading-bottom--text--color);
         .detail-service_info{
             h3{
                 color: var(--dark--text--color);
+                transition:color 0.3s ease;
                 font-weight: 500;
                 font-size: 1.9em;
             }
@@ -27,15 +25,9 @@
                     font-size: 1.2em;
                     font-weight: 600;
                     &_box-text{
-                        gap: 0.4em;
-                        i{
-                            color: #0665d0;
-                        }
-                        p{
-                            color: #638a42;
-                        }
                         span{
-                            color: #ff0000;
+                            color: var(--dark--text--color);
+                            transition:color 0.3s ease;
                         }
                     }
                     &_box-icon{
@@ -53,6 +45,7 @@
             padding: 2em;
             background-color: #fafbfd;
             background-color: var(--heading--table);
+            transition: background-color 0.3s ease;
             border-radius: 10px;
             border: 1px dashed var(--dark--text--color);
             h4{
@@ -75,6 +68,7 @@
                     background-color: var(--heading--table);
                     color: var(--dark--text--color);
                     border: 1px dashed var(--heading-bottom--text--color);
+                    transition: all 0.3s ease;
                     span{
                         font-size: 1.2em;
                     }
