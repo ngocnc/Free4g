@@ -111,15 +111,14 @@ $(document).ready(function () {
     if (
       !$(e.target).is(".sub__menu--toggle.show *") &&
       !$(e.target).is(".toggle__menu i") &&
-      !$(e.target).is(".changing-mode i")
+      !$(e.target).is(".changing-mode i") &&
+      !$(e.target).is(".icon-toggle") &&
+      !$(e.target).is(".icon-toggle > *") 
+      
     ) {
       $(".sub__menu--toggle").removeClass("show");
     }
-    // if ($(e.target).next(".sub__menu--toggle").hasClass("show")) {
-    //   if ($(e.target).is(".toggle__menu i")) {
-    //     $(".sub__menu--toggle").removeClass("show");
-    //   }
-    // }
+
   });
 
   // Change darkmode
@@ -142,16 +141,23 @@ $(document).ready(function () {
   });
 
   $(".icon-toggle").on("click", function () {
-    // $(".icon-toggle").parent().find(".sub__menu--toggle").removeClass("show");
-    // $(this).parent().find(".sub__menu--toggle").addClass("show");
-    // if($(this).parent().find(".sub__menu--toggle").hasClass("show")){
-    //   $(this).parent().find(".sub__menu--toggle.show").removeClass("show");
-    // }
-    if(!$(this).next().hasClass("show")){
-      $(this).next().addClass("show")
+
+    if(!$(this).siblings(".sub__menu--toggle").hasClass("show")){
+      $(this).siblings(".sub__menu--toggle").addClass("show")
       $(this).parent().siblings().find(".sub__menu--toggle").removeClass("show");
     }else{
-      $(this).next().removeClass("show")
+      $(this).siblings(".sub__menu--toggle").removeClass("show")
+    }
+
+    if($(this).children(".sub__menu--toggle").length > 0){
+      if($(this).children(".sub__menu--toggle").hasClass("show") === false){
+        $(this).children(".sub__menu--toggle").addClass("show");
+      }
+
+      if($(this).siblings().children(".sub__menu--toggle").hasClass("show")){
+        $(this).siblings().children(".sub__menu--toggle").removeClass("show")
+      }
+                               
     }
   });
 
