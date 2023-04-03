@@ -13262,9 +13262,6 @@ footer .footer-menu li:hover {
   line-height: 1.75;
   transition: color 0.3s ease;
 }
-.accomplished .accomplished-information .accomplished-header .payment-options {
-  background: #f1416c;
-}
 .accomplished .accomplished-information .accomplished-content {
   padding: 1.25rem 1.25rem 1px;
 }
@@ -13352,6 +13349,7 @@ footer .footer-menu li:hover {
   justify-content: space-between;
 }
 .payment-block .payment-options {
+  background: #f1416c;
   border-radius: 2rem;
   padding: 0.55rem 1.25rem;
 }
@@ -13360,6 +13358,13 @@ footer .footer-menu li:hover {
   font-size: 0.925rem;
   color: #fff;
   font-weight: 500;
+}
+.payment-block .payment-options button a {
+  color: #fff;
+}
+.payment-block .payment-options:hover {
+  background-color: #d9214e !important;
+  transition: background 0.3s ease;
 }
 
 .payment-bank .payment-bank-block {

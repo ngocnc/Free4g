@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   .payment-options {
+    background: variable.$bs-active-danger-bland;
     border-radius: 2rem;
     padding: 0.55rem 1.25rem;
     button {
@@ -11,6 +12,13 @@
       font-size: 0.925rem;
       color: #fff;
       font-weight: 500;
+      a {
+        color: #fff;
+      }
+    }
+    &:hover {
+      background-color: #d9214e !important;
+      transition: background 0.3s ease;
     }
   }
 }
