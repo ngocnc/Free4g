@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
     <link
       href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
       rel="stylesheet"
       type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
     <div class="page home__page" data-changing="false">
       <div class="page__sidebar">
@@ -655,288 +660,156 @@
   </div>
 </header>
 
-        <div class="page__content--inner">
-          <div class="container">
-            <div class="header-bottom-wrapper">
-              <div class="header-bottom">
-                <div class="header-bottom_options active">Bảng điều khiển</div>
-                <span></span>
-                <div class="header-bottom_options">Thông số tài khoản</div>
-              </div>
+        <div class="detail-service">
+            <div class="container">
+                <div class="detail-service_wrapper rounded-3">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="detail-service_info pe-lg-5">
+                                <h3 class="text-uppercase">immortal</h3>
+                                <div class="detail-service_info-wrap">
+                                    <div class="detail-service_info-content d-flex justify-content-between">
+                                        <div class="detail-service_info-content_box-text d-flex align-items-center">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <p>Thời Gian Sử Dụng : </p>
+                                            <span>Vĩnh Viễn</span>
+                                        </div>
+                                        <div class="detail-service_info-content_box-icon rounded-circle">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="detail-service_info-content d-flex justify-content-between">
+                                        <div class="detail-service_info-content_box-text d-flex align-items-center">
+                                            <i class="fa-solid fa-database"></i>
+                                            <p>Dung Lượng : </p>
+                                            <span class="text-uppercase">100 tb</span>
+                                        </div>
+                                        <div class="detail-service_info-content_box-icon rounded-circle">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="detail-service_info-content d-flex justify-content-between">
+                                        <div class="detail-service_info-content_box-text d-flex align-items-center">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p>Giới Hạn : </p>
+                                            <span>Không Giới Hạn</span>
+                                        </div>
+                                        <div class="detail-service_info-content_box-icon rounded-circle">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="detail-service_info-content d-flex justify-content-between">
+                                        <div class="detail-service_info-content_box-text d-flex align-items-center">
+                                            <i class="fa-solid fa-server"></i>
+                                            <p>Hệ Thống Máy Chủ : </p>
+                                            <span class="text-uppercase">anti ddos</span>
+                                        </div>
+                                        <div class="detail-service_info-content_box-icon rounded-circle">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="detail-service_info-content d-flex justify-content-between">
+                                        <div class="detail-service_info-content_box-text d-flex align-items-center">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <p>Tốc Độ : </p>
+                                            <span>10Gbps</span>
+                                        </div>
+                                        <div class="detail-service_info-content_box-icon rounded-circle">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="detail-service_info-content d-flex justify-content-between">
+                                        <div class="detail-service_info-content_box-text d-flex align-items-center">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <p>Hỗ Trợ Thiết Bị : </p>
+                                            <span>Android & IOS</span>
+                                        </div>
+                                        <div class="detail-service_info-content_box-icon rounded-circle">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="detail-service_info-content d-flex justify-content-between">
+                                        <div class="detail-service_info-content_box-text d-flex align-items-center">
+                                            <i class="fas fa-signal"></i>
+                                            <p>Hỗ Trợ Sim : </p>
+                                            <span>Viettel</span>
+                                        </div>
+                                        <div class="detail-service_info-content_box-icon rounded-circle">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="detail-service_info-content d-flex justify-content-between">
+                                        <div class="detail-service_info-content_box-text d-flex align-items-center">
+                                            <i class="fas fa-credit-card"></i>
+                                            <p>Thanh Toán : </p>
+                                            <span class="text-uppercase">atm-momo-card</span>
+                                        </div>
+                                        <div class="detail-service_info-content_box-icon rounded-circle">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="detail-service_pay">
+                                <h4>Tổng cộng</h4>
+                                <div class="detail-service_pay-info d-flex justify-content-between">
+                                    <p><span>IMMORTAL</span> x <span>Vĩnh Viễn</span></p>
+                                    <p><span>1.000.000</span> ₫</p>
+                                </div>
+                                <div class="detail-service_pay-time">
+                                    <div class="row gy-3">
+                                        <div class="col-6">
+                                            <div class="detail-service_pay-time_box rounded-3 active">
+                                                <span>1 tháng</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="detail-service_pay-time_box rounded-3">
+                                                <span>3 tháng</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="detail-service_pay-time_box rounded-3">
+                                                <span>6 tháng</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="detail-service_pay-time_box rounded-3">
+                                                <span>1 năm</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="detail-service_pay-time_box rounded-3">
+                                                <span>2 năm</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="detail-service_pay-time_box rounded-3">
+                                                <span>3 năm</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="detail-service_pay-time_box rounded-3">
+                                                <span>Trọn đời</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-service_pay-total-price d-flex align-items-end">
+                                    <span>Tổng thanh toán: </span>
+                                    <h4><span>2,000</span> đồng</h4>
+                                </div>
+                                <button type="button" class="btn-order rounded-3 btn btn-primary d-flex align-items-center">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <span>Đặt hàng</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <section class="block">
-              <div class="row align-items-lg-center">
-                <div class="col-lg-8 d-lg-block d-none">
-                  <h4>Free4G VIP 3k5</h4>
-                  <p class="date-time">Hết hạn vào 18:13 26/02/2023</p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                      style="width: 40%"></div>
-                  </div>
-                  <p><span>Đã dùng 28,964 MB / Tổng 100 GB</span></p>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                  <div
-                    class="block_options justify-content-start justify-content-lg-end toggle__menu">
-                    <div
-                      class="block_options-detail active-primary color-text-white icon-toggle">
-                      <i class="fas fa-rss"></i>
-                      <a href="#">Nhấp vào để đồng bộ máy chủ</a>
-                      <div class="sub__menu--toggle py-4">
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-copy"></i>
-                            <a href="ctv.html" class="gray-text"> Lời mời của tôi </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Clash for android </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Lời mời của tôi </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Shadowrocket   </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> QuantumultX   </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="block_options-detail light-primary color-text-black icon-toggle">
-                      <i class="fas fa-cog"></i>
-                      <a href="#">Thao tác</a>
-                      <div class="sub__menu--toggle py-4">
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-copy"></i>
-                            <a href="ctv.html" class="gray-text"> Lời mời của tôi </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Clash for android </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Lời mời của tôi </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Shadowrocket   </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> QuantumultX   </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="block_options-detail active-danger color-text-white">
-                      <a href="#">Lấy TK Shadowrocket & i2Ray</a>
-                    </div>
-                    <div
-                      class="block_options-detail active-info color-text-white">
-                      <a href="#">Download Clash Windows</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="list-user">
-              <div class="list-user_header">
-                <h5 class="block-title">Thống kê người sử dụng</h5>
-              </div>
-              <table class="list-user_content" style="width: 100%">
-    <thead>
-      <tr>
-        <th style="width: 35%">Tên</th>
-        <th>Đang sử dụng</th>
-        <th>Trạng thái</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 35%">
-          🇻🇳 HCM 10GB/s (1)
-        </td>
-        <td>
-          <span class="user-box"><strong>50</strong> 👨&zwj;💼</span>
-        </td>
-        <td>
-          <div class="dot"></div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-            </section>
-          </div>
         </div>
         <footer id="footer">
     <div class="footer-text">
@@ -981,6 +854,10 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"></script>
     <script src="assets/js/popper.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
     <script src="assets/js/boostrap.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

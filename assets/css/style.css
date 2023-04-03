@@ -11474,6 +11474,7 @@ h6 {
 }
 
 .toggle__menu {
+  position: relative;
   display: inline-block;
 }
 
@@ -11529,7 +11530,6 @@ h6 {
 }
 .sub__menu--toggle .menu__content * {
   display: block;
-  width: 100%;
   color: var(--dark--text--color);
 }
 .sub__menu--toggle .menu__item > .menu__content:hover {
@@ -11844,6 +11844,11 @@ h6 {
 
 .form-group + .form-group {
   margin-top: 20px;
+}
+
+.icon-toggle {
+  position: relative;
+  cursor: pointer;
 }
 
 .page {
@@ -12440,13 +12445,13 @@ footer .footer-menu li:hover {
 .block .block_options .block_options-detail.color-text-white {
   color: #fff;
 }
-.block .block_options .block_options-detail.color-text-white a {
+.block .block_options .block_options-detail.color-text-white > a {
   color: #fff;
 }
 .block .block_options .block_options-detail.color-text-black {
   color: #7e8299;
 }
-.block .block_options .block_options-detail.color-text-black a {
+.block .block_options .block_options-detail.color-text-black > a {
   color: #7e8299;
 }
 .block .block_options .block_options-detail a {
@@ -12456,6 +12461,7 @@ footer .footer-menu li:hover {
 }
 .block .block_options .block_options-detail i {
   padding-right: 0.4em;
+  transition: color 0.3s ease;
 }
 
 .list-user {
@@ -13452,6 +13458,125 @@ footer .footer-menu li:hover {
 }
 .payment button:hover {
   background: #3699ff;
+
+.detail-service {
+  cursor: context-menu;
+  background-color: var(--background--content);
+  padding: 5em 0 5.5em;
+}
+@media only screen and (max-width: 576px) {
+  .detail-service {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .detail-service {
+    font-size: 15px;
+  }
+}
+.detail-service_wrapper {
+  background-color: var(--heading--table);
+  padding: 3em;
+  border: 1px dashed var(--heading-bottom--text--color);
+}
+.detail-service_wrapper .detail-service_info h3 {
+  color: var(--dark--text--color);
+  font-weight: 500;
+  font-size: 1.9em;
+}
+.detail-service_wrapper .detail-service_info-wrap {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.detail-service_wrapper .detail-service_info-wrap .detail-service_info-content {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.detail-service_wrapper .detail-service_info-wrap .detail-service_info-content_box-text {
+  gap: 0.4em;
+}
+.detail-service_wrapper .detail-service_info-wrap .detail-service_info-content_box-text i {
+  color: #0665d0;
+}
+.detail-service_wrapper .detail-service_info-wrap .detail-service_info-content_box-text p {
+  color: #638a42;
+}
+.detail-service_wrapper .detail-service_info-wrap .detail-service_info-content_box-text span {
+  color: #ff0000;
+}
+.detail-service_wrapper .detail-service_info-wrap .detail-service_info-content_box-icon {
+  background-color: #c4efd8;
+  color: #5db78a;
+  padding: 0.05em 0.25em 0;
+}
+.detail-service_wrapper .detail-service_info-wrap .detail-service_info-content_box-icon i {
+  font-size: 1em;
+}
+.detail-service_wrapper .detail-service_pay {
+  padding: 2em;
+  background-color: #fafbfd;
+  background-color: var(--heading--table);
+  border-radius: 10px;
+  border: 1px dashed var(--dark--text--color);
+}
+.detail-service_wrapper .detail-service_pay h4 {
+  font-size: 1.4em;
+  color: #76838b;
+}
+.detail-service_wrapper .detail-service_pay-info {
+  font-size: 1.2em;
+  padding: 1.2em 0.3em 0.5em;
+  border-bottom: 1px solid #6b6c6e;
+  border-bottom: 1px solid var(--heading-bottom--text--color);
+}
+.detail-service_wrapper .detail-service_pay-info p {
+  margin: 0;
+}
+.detail-service_wrapper .detail-service_pay .detail-service_pay-time {
+  padding: 2em 0;
+}
+.detail-service_wrapper .detail-service_pay .detail-service_pay-time_box {
+  padding: 1.5em;
+  background-color: var(--heading--table);
+  color: var(--dark--text--color);
+  border: 1px dashed var(--heading-bottom--text--color);
+}
+.detail-service_wrapper .detail-service_pay .detail-service_pay-time_box span {
+  font-size: 1.2em;
+}
+.detail-service_wrapper .detail-service_pay .detail-service_pay-time_box.active {
+  background-color: #f1faff;
+  border: 1px dashed #759593;
+  color: black;
+}
+.detail-service_wrapper .detail-service_pay .detail-service_pay-total-price {
+  gap: 0.5em;
+  color: var(--dark--text--color);
+}
+.detail-service_wrapper .detail-service_pay .detail-service_pay-total-price span {
+  font-size: 1.1em;
+}
+.detail-service_wrapper .detail-service_pay .detail-service_pay-total-price h4 {
+  font-size: 1.3em;
+  color: var(--dark--text--color);
+}
+.detail-service_wrapper .detail-service_pay .btn-order {
+  gap: 0.5em;
+  font-size: 1.2em;
+  padding: 0.8em 1.2em;
+  margin-top: 1em;
+  background-color: #038ed8;
+  border: none;
+  transition: all 0.2s ease;
+}
+.detail-service_wrapper .detail-service_pay .btn-order span {
+  font-weight: 500;
+}
+.detail-service_wrapper .detail-service_pay .btn-order:hover {
+  background-color: #019ef4;
+
 }
 
 /*******************************

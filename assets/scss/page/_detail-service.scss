@@ -1,0 +1,117 @@
+.detail-service{
+    cursor: context-menu;
+    background-color: var(--background--content);
+    padding: 5em 0 5.5em;
+    @media only screen and (max-width: 576px){
+        font-size: 11px;
+      }
+      @media only screen and (min-width: 576px) and (max-width: 992px){
+        font-size: 15px;
+      }
+    &_wrapper{
+        background-color: var(--heading--table);
+        padding: 3em;
+        border: 1px dashed var(--heading-bottom--text--color);
+        .detail-service_info{
+            h3{
+                color: var(--dark--text--color);
+                font-weight: 500;
+                font-size: 1.9em;
+            }
+            &-wrap{
+                padding: 2em 0;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                .detail-service_info-content{
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    &_box-text{
+                        gap: 0.4em;
+                        i{
+                            color: #0665d0;
+                        }
+                        p{
+                            color: #638a42;
+                        }
+                        span{
+                            color: #ff0000;
+                        }
+                    }
+                    &_box-icon{
+                        background-color: #c4efd8;
+                        color: #5db78a;
+                        padding: 0.05em 0.25em 0;
+                        i{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+        .detail-service_pay{
+            padding: 2em;
+            background-color: #fafbfd;
+            background-color: var(--heading--table);
+            border-radius: 10px;
+            border: 1px dashed var(--dark--text--color);
+            h4{
+                font-size: 1.4em;
+                color: #76838b;
+            }
+            &-info{
+                font-size: 1.2em;
+                padding: 1.2em 0.3em 0.5em;
+                border-bottom: 1px solid #6b6c6e;
+                border-bottom: 1px solid var(--heading-bottom--text--color);
+                p{
+                    margin: 0;
+                }
+            }
+            .detail-service_pay-time{
+                padding: 2em 0;
+                &_box{
+                    padding: 1.5em;
+                    background-color: var(--heading--table);
+                    color: var(--dark--text--color);
+                    border: 1px dashed var(--heading-bottom--text--color);
+                    span{
+                        font-size: 1.2em;
+                    }
+                    &.active{
+                        background-color: #f1faff;
+                        border: 1px dashed #759593;
+                        color: black;
+                    }
+                }
+            }
+            .detail-service_pay-total-price{
+                gap: 0.5em;
+                color: var(--dark--text--color);
+                span{
+                    font-size: 1.1em;
+                }
+                h4{
+                    font-size: 1.3em;
+                    color: var(--dark--text--color);
+                }
+            }
+            .btn-order{
+                gap: 0.5em;
+                font-size: 1.2em;
+                padding: 0.8em 1.2em;
+                margin-top: 1em;
+                background-color: #038ed8;
+                border: none;
+                transition: all 0.2s ease;
+                span{
+                    font-weight: 500;
+                    
+                }
+                &:hover{
+                    background-color: #019ef4;
+                }
+            }
+        }
+    }
+}
