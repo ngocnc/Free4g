@@ -71,13 +71,13 @@
       }
       &.color-text-white {
         color: #fff;
-        a {
+        & > a {
           color: #fff;
         }
       }
       &.color-text-black {
         color: variable.$bs-gray-600;
-        a {
+        & > a {
           color: variable.$bs-gray-600;
         }
       }
@@ -88,6 +88,7 @@
       }
       i {
         padding-right: 0.4em;
+        transition: color 0.3s ease;
       }
     }
   }
