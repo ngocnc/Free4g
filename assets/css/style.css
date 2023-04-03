@@ -12451,7 +12451,7 @@ footer .footer-menu li:hover {
 .block .block_options .block_options-detail.color-text-black {
   color: #7e8299;
 }
-.block .block_options .block_options-detail.color-text-black a {
+.block .block_options .block_options-detail.color-text-black > a {
   color: #7e8299;
 }
 .block .block_options .block_options-detail a {

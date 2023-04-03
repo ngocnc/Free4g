@@ -77,7 +77,7 @@
       }
       &.color-text-black {
         color: variable.$bs-gray-600;
-        a {
+        & > a {
           color: variable.$bs-gray-600;
         }
       }
