@@ -1,3 +1,5 @@
+@use "../helpers/variable";
+
 .header-bottom-numbers {
   color: var(--dark--text--color);
   transition: color 0.3s ease;
