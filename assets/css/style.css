@@ -11474,6 +11474,7 @@ h6 {
 }
 
 .toggle__menu {
+  position: relative;
   display: inline-block;
 }
 
@@ -11529,7 +11530,6 @@ h6 {
 }
 .sub__menu--toggle .menu__content * {
   display: block;
-  width: 100%;
   color: var(--dark--text--color);
 }
 .sub__menu--toggle .menu__item > .menu__content:hover {
@@ -11844,6 +11844,11 @@ h6 {
 
 .form-group + .form-group {
   margin-top: 20px;
+}
+
+.icon-toggle {
+  position: relative;
+  cursor: pointer;
 }
 
 .page {
@@ -12440,7 +12445,7 @@ footer .footer-menu li:hover {
 .block .block_options .block_options-detail.color-text-white {
   color: #fff;
 }
-.block .block_options .block_options-detail.color-text-white a {
+.block .block_options .block_options-detail.color-text-white > a {
   color: #fff;
 }
 .block .block_options .block_options-detail.color-text-black {
@@ -12456,6 +12461,7 @@ footer .footer-menu li:hover {
 }
 .block .block_options .block_options-detail i {
   padding-right: 0.4em;
+  transition: color 0.3s ease;
 }
 
 .list-user {

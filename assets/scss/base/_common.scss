@@ -200,6 +200,7 @@
 }
 
 .toggle__menu {
+  position: relative;
   display: inline-block;
 }
 
@@ -256,7 +257,6 @@
     padding: 0.65rem 1rem;
     * {
       display: block;
-      width: 100%;
       color: var(--dark--text--color);
     }
   }
@@ -591,3 +591,7 @@
   margin-top: 20px;
 }
 
+.icon-toggle{
+  position: relative;
+  cursor: pointer;
+}
