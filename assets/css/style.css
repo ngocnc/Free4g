@@ -11501,6 +11501,11 @@ h6 {
   min-width: 250px;
   animation: menu-sub-dropdown-animation-fade-in 0.3s ease 1, menu-sub-dropdown-animation-move-up 0.3s ease 1;
 }
+@media (max-width: 767.98px) {
+  .sub__menu--toggle.show {
+    margin-right: -65px;
+  }
+}
 .sub__menu--toggle.large-toggle.show {
   min-width: 500px;
 }
@@ -13458,6 +13463,7 @@ footer .footer-menu li:hover {
 }
 .payment button:hover {
   background: #3699ff;
+}
 
 .detail-service {
   cursor: context-menu;
@@ -13576,7 +13582,6 @@ footer .footer-menu li:hover {
 }
 .detail-service_wrapper .detail-service_pay .btn-order:hover {
   background-color: #019ef4;
-
 }
 
 /*******************************
