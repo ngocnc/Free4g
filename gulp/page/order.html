@@ -1,113 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div class="page home__page" data-changing="false">
-      @@include('../layout/sidebar.html')
 
-      <div class="page__content">
-        @@include('../layout/header.html')
-        <div class="page__content--inner">
-          <div class="container">
-            <div class="header-bottom-wrapper">
-              <div class="header-bottom">
-                <div class="header-bottom_options active">Đơn hàng của tôi</div>
-                <span></span>
-                <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
-                <i> - </i>
-                <div class="header-bottom_options">Đơn hàng của tôi</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="page home__page" data-changing="false">
+    @@include('../layout/sidebar.html')
+
+    <div class="page__content">
+      @@include('../layout/header.html')
+      <div class="page__content--inner">
+        <div class="container">
+          <div class="header-bottom-wrapper">
+            <div class="header-bottom">
+              <div class="header-bottom_options active">Đơn hàng của tôi</div>
+              <span></span>
+              <a href="index.html" class="redirect-home"> Bảng điều khiển </a>
+              <i> - </i>
+              <div class="header-bottom_options">Đơn hàng của tôi</div>
+            </div>
+          </div>
+
+          <section class="block">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-8 d-lg-block d-none">
+                <h4>Free4G VIP 3k5</h4>
+                <p class="date-time">Hết hạn vào 18:13 26/02/2023</p>
+                <div class="progress">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%">
+                  </div>
+                </div>
+                <p><span>Đã dùng 28,964 MB / Tổng 100 GB</span></p>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="block_options justify-content-start justify-content-lg-end toggle__menu">
+                  <div class="block_options-detail active-primary color-text-white icon-toggle">
+                    <i class="fas fa-rss"></i>
+                    <a href="#">Nhấp vào để đồng bộ máy chủ</a>
+                    <div class="sub__menu--toggle py-4">
+                      <div class="menu__item px-3">
+                        <div class="menu__content d-flex align-items-center">
+                          <i class="fal fa-copy"></i>
+                          <a href="ctv.html" class="gray-text">Sao chép liên kết</a>
+                        </div>
+                      </div>
+                      <div class="menu__item px-3">
+                        <div class="menu__content d-flex align-items-center">
+                          <i class="fal fa-share"></i>
+                          <a href="ctv.html" class="gray-text"> Clash for android </a>
+                        </div>
+                      </div>
+                      <div class="menu__item px-3">
+                        <div class="menu__content d-flex align-items-center">
+                          <i class="fal fa-share"></i>
+                          <a href="ctv.html" class="gray-text"> Shadowrocket </a>
+                        </div>
+                      </div>
+                      <div class="menu__item px-3">
+                        <div class="menu__content d-flex align-items-center">
+                          <i class="fal fa-share"></i>
+                          <a href="ctv.html" class="gray-text"> QuantumultX </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block_options-detail light-primary color-text-black icon-toggle">
+                    <i class="fas fa-cog"></i>
+                    <a href="#">Thao tác</a>
+                    <div class="sub__menu--toggle py-4">
+                      <div class="menu__item px-3">
+                        <div class="menu__content d-flex align-items-center">
+                          <i class="far fa-shopping-cart"></i>
+                          <a href="ctv.html" class="gray-text"> Gia hạn</a>
+                        </div>
+                      </div>
+                      <div class="menu__item px-3">
+                        <div class="menu__content d-flex align-items-center">
+                          <i class="fal fa-user-shield"></i>
+                          <a href="ctv.html" class="gray-text"> Reset thông tin gói </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <section class="block">
-              <div class="row align-items-lg-center">
-                <div class="col-lg-8 d-lg-block d-none">
-                  <h4>Free4G VIP 3k5</h4>
-                  <p class="date-time">Hết hạn vào 18:13 26/02/2023</p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                      style="width: 40%"></div>
-                  </div>
-                  <p><span>Đã dùng 28,964 MB / Tổng 100 GB</span></p>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                  <div
-                    class="block_options justify-content-start justify-content-lg-end toggle__menu">
-                    <div
-                      class="block_options-detail active-primary color-text-white icon-toggle">
-                      <i class="fas fa-rss"></i>
-                      <a href="#">Nhấp vào để đồng bộ máy chủ</a>
-                      <div class="sub__menu--toggle py-4">
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-copy"></i>
-                            <a href="ctv.html" class="gray-text"> Lời mời của tôi </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Clash for android </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Lời mời của tôi </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> Shadowrocket   </a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-share"></i>
-                            <a href="ctv.html" class="gray-text"> QuantumultX   </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="block_options-detail light-primary color-text-black icon-toggle">
-                      <i class="fas fa-cog"></i>
-                      <a href="#">Thao tác</a>
-                      <div class="sub__menu--toggle py-4">
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="far fa-shopping-cart"></i>
-                            <a href="ctv.html" class="gray-text"> Gia hạn</a>
-                          </div>
-                        </div>
-                        <div class="menu__item px-3">
-                          <div class="menu__content d-flex align-items-center">
-                            <i class="fal fa-user-shield"></i>
-                            <a href="ctv.html" class="gray-text"> Reset thông tin gói </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- 
+          </section>
+          <!-- 
             <section class="recharge">
               <div class="recharge-background">
                 <img src="assets/images/17-dark.png" class="img-fluid" />
@@ -135,32 +123,30 @@
               </div>
             </section> -->
 
-            <div class="card">
-              <div class="card-header">
-                <div class="card-title">
-                  <h3>Trạng thái máy chủ</h3>
-                </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">
+                <h3>Trạng thái máy chủ</h3>
               </div>
-              <div class="card-body">
-                <div class="data__table--wrapper">
-                  <table
-                    style="width: 100%"
-                    class="table no-search responsive dt-responsive nowrap dataTable no-footer">
-                    <thead>
-                      <tr>
-                        <th scope="col"># Mã đơn hàng</th>
-                        <th scope="col">Chu kỳ</th>
-                        <!-- <th scope="col">Tiền đơn hàng</th>
+            </div>
+            <div class="card-body">
+              <div class="data__table--wrapper">
+                <table style="width: 100%" class="table no-search responsive dt-responsive nowrap dataTable no-footer">
+                  <thead>
+                    <tr>
+                      <th scope="col"># Mã đơn hàng</th>
+                      <th scope="col">Chu kỳ</th>
+                      <!-- <th scope="col">Tiền đơn hàng</th>
                         <th scope="col">Trạng thái đơn</th>
                         <th scope="col">Thời gian tạo</th>
                         <th scope="col">Thao tác</th> -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>MDH-0123</th>
-                        <th>1</th>
-                        <!-- <th>1.000.000đ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>MDH-0123</th>
+                      <th>1</th>
+                      <!-- <th>1.000.000đ</th>
                         <th>
                           <div class="badge bg-danger">Quá hạn</div>
                         </th>
@@ -169,27 +155,26 @@
                           <a href="#">Xem chi tiết</a>
                           <a href="#" class="cancal">Huỷ</a>
                         </th> -->
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
-        @@include('../layout/footer.html')
       </div>
+      @@include('../layout/footer.html')
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
-    <script src="assets/js/boostrap.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+  <script src="assets/js/boostrap.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
