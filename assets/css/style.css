@@ -12917,8 +12917,7 @@ footer .footer-menu li:hover {
   color: #75d0fd;
 }
 .log-in_wrapper .log-in_content .log-in_box form {
-  padding: 2em 0 2.5em;
-  border-bottom: 1px solid #c5c6cc;
+  padding: 2em 0 1em;
 }
 .log-in_wrapper .log-in_content .log-in_box form .form-email_text {
   color: #181c32;
@@ -12962,8 +12961,18 @@ footer .footer-menu li:hover {
 .log-in_wrapper .log-in_content .log-in_box form .login-btn:hover {
   background-color: #0095e8;
 }
+.log-in_wrapper .log-in_content .log-in_box .social-login {
+  padding-bottom: 1rem;
+}
+.log-in_wrapper .log-in_content .log-in_box .social-login p {
+  padding-bottom: 1rem;
+}
+.log-in_wrapper .log-in_content .log-in_box .social-login i {
+  font-size: 2em;
+}
 .log-in_wrapper .log-in_content .log-in_box .log-in_box-contact {
-  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #c5c6cc;
 }
 .log-in_wrapper .log-in_content .log-in_box .log-in_box-contact h4 {
   font-size: 1.3em;
