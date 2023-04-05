@@ -232,9 +232,6 @@
     min-width: 250px;
     animation: menu-sub-dropdown-animation-fade-in 0.3s ease 1,
       menu-sub-dropdown-animation-move-up 0.3s ease 1;
-    @include media-breakpoint-down(md) {
-      margin-right: -65px;
-    }
   }
   &.large-toggle.show {
     min-width: 500px;
