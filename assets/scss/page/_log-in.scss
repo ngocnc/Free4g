@@ -46,8 +46,7 @@
           }
         }
         form {
-          padding: 2em 0 2.5em;
-          border-bottom: 1px solid #c5c6cc;
+          padding: 2em 0 1em;
           .form-email {
             &_text {
               color: #181c32;
@@ -88,13 +87,24 @@
             border: none;
             font-weight: 500;
             cursor: pointer;
-            &:hover{
+            &:hover {
               background-color: #0095e8;
             }
           }
         }
+        .social-login {
+          padding-bottom: 1rem;
+          p {
+            padding-bottom: 1rem;
+          }
+          i {
+            font-size: 2em;
+          }
+        }
+
         .log-in_box-contact {
-          margin-top: 1em;
+          padding-top: 1em;
+          border-top: 1px solid #c5c6cc;
           h4 {
             font-size: 1.3em;
             font-weight: 600;
