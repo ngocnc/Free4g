@@ -13465,12 +13465,6 @@ footer .footer-menu li:hover {
   background: #3699ff;
 }
 
-.detail-service {
-  cursor: context-menu;
-  background-color: var(--background--content);
-  padding: 5em 0 5.5em;
-}
-
 @media only screen and (max-width: 576px) {
   .detail-service {
     font-size: 11px;
