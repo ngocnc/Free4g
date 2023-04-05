@@ -69,6 +69,11 @@
       @include media-breakpoint-down(md) {
         font-size: 0.8em;
       }
+      .sub__menu--toggle {
+        @include media-breakpoint-down(md) {
+          margin-right: -65px;
+        }
+      }
       &.color-text-white {
         color: #fff;
         & > a {
